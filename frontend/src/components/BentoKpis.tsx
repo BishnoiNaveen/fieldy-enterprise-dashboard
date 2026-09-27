@@ -178,7 +178,7 @@ export const BentoKpis: React.FC<BentoKpisProps> = ({
 
           <div className={`mt-4 pt-3 border-t ${borderSub} flex items-center justify-between text-xs`}>
             <span className="text-amber-700 dark:text-amber-400 font-bold">
-              Kuldeep Gill, Rohit Deshmukh
+              Ravinder Bishnoi, Vishnu
             </span>
             <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400">View →</span>
           </div>

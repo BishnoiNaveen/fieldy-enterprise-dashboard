@@ -1,14 +1,14 @@
 {
-  "last_synced_at": "2026-09-27T07:19:28.311807+00:00",
-  "sync_id": "SYNC-20260927071923",
-  "source": "fieldy_live_cloud",
+  "last_synced_at": "2026-09-27T09:39:54.490633+00:00",
+  "sync_id": "SYNC-20260927093954",
+  "source": "fieldy_database",
   "data": {
     "pulse_kpis": {
       "technicians_on_paid_jobs": 8,
       "technicians_active_total": 12,
       "technicians_on_leave": 2,
       "total_jobs_today": 10,
-      "jobs_completed_today": 4,
+      "jobs_completed_today": 2,
       "fleet_utilization_pct": 66.7,
       "machines_under_service": 5,
       "closed_jobs": 0,
@@ -19,15 +19,15 @@
     "technicians_on_jobs": [
       {
         "technician_id": "TECH-01",
-        "name": "Gurpreet Singh",
+        "name": "Sunny Kumar",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0101",
-        "customer_company": "Reliance Industries Limited (Bio-Energy Division)",
-        "machine_asset": "Krone BigPack 1290 HDP High Density Baler",
+        "live_job_id": "SR-26- 0148",
+        "customer_company": "Guru kirpa tractor",
+        "machine_asset": "Krone Swadro TC 640 Rotary Rake",
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -35,15 +35,15 @@
       },
       {
         "technician_id": "TECH-02",
-        "name": "Vikram Sharma",
+        "name": "Sukhdeep Singh",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0102",
-        "customer_company": "Punjab State Farm Cooperative Hoshiarpur",
-        "machine_asset": "Krone Fortima V 1500 Round Baler",
+        "live_job_id": "SR-26- 0140",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
+        "machine_asset": "Krone BigPack 1290 HDP High Density Baler",
         "current_location": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -51,15 +51,15 @@
       },
       {
         "technician_id": "TECH-03",
-        "name": "Sunny Kumar",
+        "name": "Sunil Kumar",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0103",
-        "customer_company": "VERBIO Bio-Gas India Pvt Ltd (Western UP Plant)",
-        "machine_asset": "Krone BiG X 680 Forage Harvester",
+        "live_job_id": "SR-26- 0147",
+        "customer_company": "Bio fuel circle pvt.ltd - Gaurav Dashottar",
+        "machine_asset": "Krone Fortima F 1600 Round Baler",
         "current_location": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -67,15 +67,15 @@
       },
       {
         "technician_id": "TECH-04",
-        "name": "Jaswinder Singh",
+        "name": "Sunder",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0104",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
-        "machine_asset": "Krone EasyCut B 870 Mower Conditioner",
+        "live_job_id": "SR-26- 0122",
+        "customer_company": "Biofuel Circle",
+        "machine_asset": "Krone BiG X 700 Forage Harvester",
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 22.9774,
+          "lng": 75.8239,
+          "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -83,15 +83,15 @@
       },
       {
         "technician_id": "TECH-05",
-        "name": "B. Vignesh",
+        "name": "Naveen Bishnoi",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0105",
-        "customer_company": "Hoshiarpur Bio-Fuels Farm Cluster",
-        "machine_asset": "Krone Swadro TC 880 Rotary Rake",
+        "live_job_id": "SR-26- 0180",
+        "customer_company": "Bio fuel corporation",
+        "machine_asset": "Krone Bellima F 130 Round Baler",
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -99,15 +99,15 @@
       },
       {
         "technician_id": "TECH-06",
-        "name": "M. Naveen Kumar",
+        "name": "Vidhyant Kumar",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0106",
-        "customer_company": "RIL Barwala Bio-Mass Facility",
-        "machine_asset": "Krone BigPack 1290 HDP High Density Baler",
+        "live_job_id": "SR-26- 0138",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "machine_asset": "Krone BiG X 700 Forage Harvester",
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 26.9038,
+          "lng": 80.2078,
+          "name": "Bangarmau Field Depot (Unnao, UP)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -115,15 +115,15 @@
       },
       {
         "technician_id": "TECH-07",
-        "name": "Palthiya Kishore",
+        "name": "Vignesh",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0107",
-        "customer_company": "Kakinada Agro Energy Terminal",
-        "machine_asset": "Krone BigPack 1290 HDP High Density Baler",
+        "live_job_id": "SR-26- 0149",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
+        "machine_asset": "Krone Swadro TC 640 Rotary Rake",
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -131,15 +131,15 @@
       },
       {
         "technician_id": "TECH-08",
-        "name": "Nitin Gour",
+        "name": "Naveen Kumar",
         "status": "On Paid Job",
-        "live_job_id": "SR-26-0108",
-        "customer_company": "Bathinda Bio-Power Co.",
-        "machine_asset": "Krone Fortima V 1500 Round Baler",
+        "live_job_id": "SR-26- 0145",
+        "customer_company": "Guru Kripa",
+        "machine_asset": "Krone Swadro TC 640 Rotary Rake",
         "current_location": {
-          "lat": 22.7196,
-          "lng": 75.8577,
-          "name": "Indore Bio-Power Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
         "elapsed_minutes": 210,
         "is_paid_job": true,
@@ -149,16 +149,16 @@
     "technicians_on_leave": [
       {
         "technician_id": "TECH-13",
-        "name": "Kuldeep Gill",
+        "name": "Ravinder Bishnoi",
         "region": "Punjab",
-        "leave_type": "Casual Leave",
+        "leave_type": "Weekly Off",
         "return_date": "2026-09-28"
       },
       {
         "technician_id": "TECH-14",
-        "name": "Rohit Deshmukh",
-        "region": "Maharashtra",
-        "leave_type": "Weekly Off",
+        "name": "Vishnu",
+        "region": "Chhattisgarh",
+        "leave_type": "Casual Leave",
         "return_date": "2026-09-28"
       }
     ],
@@ -410,291 +410,291 @@
       {
         "asset_name": "Krone BigPack 1290 HDP High Density Baler",
         "serial_number": "BP1290-78401",
-        "client_company_name": "Reliance Industries Limited (Bio-Energy Division)",
-        "site_contact_person": "Rajinder Verma (+91 98765 43210)",
-        "location": "Ludhiana Bio-Mass Hub, Punjab",
-        "active_job_id": "SR-26-0101",
-        "service_type": "Emergency Knotter Timing Calibration",
+        "client_company_name": "Dasmesh LF - Mr. Sarabjit Singh",
+        "site_contact_person": "Mr. Sarabjit Singh (+91 98140 88210)",
+        "location": "Chuharchak - Kaunke Kalan Road, Jagraon, Punjab",
+        "active_job_id": "SR-26- 0140",
+        "service_type": "Maintenance & Knotter Check",
         "operating_hours": 1845.0,
         "health_status": "Under Service"
       },
       {
-        "asset_name": "Krone Fortima V 1500 Round Baler",
-        "serial_number": "FV1500-33901",
-        "client_company_name": "Punjab State Farm Cooperative Hoshiarpur",
-        "site_contact_person": "Harbhajan Mann (+91 98765 43211)",
-        "location": "Hoshiarpur Agro Complex, Punjab",
-        "active_job_id": "SR-26-0102",
-        "service_type": "Commissioning & First Season Run",
+        "asset_name": "Krone Fortima F 1600 Round Baler",
+        "serial_number": "FT1600-332901",
+        "client_company_name": "Bio fuel circle pvt.ltd - Gaurav Dashottar",
+        "site_contact_person": "Gaurav Dashottar (+91 98141 55667)",
+        "location": "Ferozepur Road, Firozpur, Punjab",
+        "active_job_id": "SR-26- 0147",
+        "service_type": "Fortima F1600 repairing and maintenance",
         "operating_hours": 920.0,
         "health_status": "Under Service"
       },
       {
-        "asset_name": "Krone BiG X 680 Forage Harvester",
-        "serial_number": "BX6800-45912",
-        "client_company_name": "VERBIO Bio-Gas India Pvt Ltd (Western UP Plant)",
-        "site_contact_person": "Sunil Tyagi (+91 98765 43212)",
-        "location": "Meerut Sugar Belt, Uttar Pradesh",
-        "active_job_id": "SR-26-0103",
-        "service_type": "Drum Cutterhead Knife Sharpening",
-        "operating_hours": 512.0,
-        "health_status": "Under Service"
-      },
-      {
-        "asset_name": "Krone EasyCut B 870 Mower Conditioner",
-        "serial_number": "EC8700-12845",
-        "client_company_name": "SAEL Punjab Biomass Energy Project",
-        "site_contact_person": "Gurcharan Singh (+91 98765 43213)",
-        "location": "Barnala Bio-Mass Site, Punjab",
-        "active_job_id": "SR-26-0104",
-        "service_type": "Bed Oil Leakage & Cutterbar Disc Inspection",
+        "asset_name": "Krone BiG X 700 Forage Harvester",
+        "serial_number": "BX700-112045",
+        "client_company_name": "Biofuel Circle",
+        "site_contact_person": "Harman Gill (+91 98260 77412)",
+        "location": "Nh148bb, Lehra, Punjab, India, 148031",
+        "active_job_id": "SR-26- 0122",
+        "service_type": "BiG X 700 Cutterhead Maintenance",
         "operating_hours": 1240.0,
         "health_status": "Under Service"
       },
       {
-        "asset_name": "Krone Swadro TC 880 Rotary Rake",
-        "serial_number": "SW8800-98321",
-        "client_company_name": "Hoshiarpur Bio-Fuels Farm Cluster",
-        "site_contact_person": "Malkit Singh (+91 98765 43214)",
-        "location": "Hoshiarpur Fields, Punjab",
-        "active_job_id": "SR-26-0105",
-        "service_type": "Rotor Height Calibration",
+        "asset_name": "Krone Swadro TC 640 Rotary Rake",
+        "serial_number": "SW640-559120",
+        "client_company_name": "Guru kirpa tractor",
+        "site_contact_person": "Gurkripa Support (+91 96259 57663)",
+        "location": "Mdr102, Kulan, Haryana",
+        "active_job_id": "SR-26- 0148",
+        "service_type": "Swadro TC 640 Repair & Calibration",
         "operating_hours": 640.0,
+        "health_status": "Under Service"
+      },
+      {
+        "asset_name": "Krone Bellima F 130 Round Baler",
+        "serial_number": "BL130-449120",
+        "client_company_name": "Bio fuel corporation",
+        "site_contact_person": "Govind Bhandari (+91 98120 44332)",
+        "location": "Bangarmau, Unnao, Uttar Pradesh",
+        "active_job_id": "SR-26- 0180",
+        "service_type": "Ground Clearance Improvement",
+        "operating_hours": 512.0,
         "health_status": "Under Service"
       }
     ],
     "technicians": [
       {
         "technician_id": "TECH-01",
-        "name": "Gurpreet Singh",
+        "name": "Sunny Kumar",
         "role": "Lead Baler Specialist",
-        "region": "Punjab",
-        "phone": "+91 98140 88210",
-        "email": "gurpreet.singh@krone.in",
+        "region": "Haryana",
+        "phone": "+91 96259 57663",
+        "email": "sunny.kumar@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0101",
+        "active_job_id": "SR-26- 0148",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
         "last_coordinates": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0101",
         "leave_type": null
       },
       {
         "technician_id": "TECH-02",
-        "name": "Vikram Sharma",
+        "name": "Sukhdeep Singh",
         "role": "Senior Service Engineer",
-        "region": "Haryana",
-        "phone": "+91 98120 77412",
-        "email": "vikram.sharma@krone.in",
+        "region": "Punjab",
+        "phone": "+91 98140 88210",
+        "email": "sukhdeep.singh@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0102",
+        "active_job_id": "SR-26- 0140",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "last_coordinates": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0201",
         "leave_type": null
       },
       {
         "technician_id": "TECH-03",
-        "name": "Sunny Kumar",
-        "role": "Lead Service Specialist",
-        "region": "Haryana",
-        "phone": "+91 96259 57663",
-        "email": "sunny.kumar@krone.in",
+        "name": "Sunil Kumar",
+        "role": "Field Service Specialist",
+        "region": "Punjab",
+        "phone": "+91 98141 55667",
+        "email": "sunil.kumar@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0103",
+        "active_job_id": "SR-26- 0147",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "last_coordinates": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0301",
         "leave_type": null
       },
       {
         "technician_id": "TECH-04",
-        "name": "Jaswinder Singh",
-        "role": "Senior Field Specialist",
-        "region": "Punjab",
-        "phone": "+91 98765 11223",
-        "email": "jaswinder.singh@krone.in",
+        "name": "Sunder",
+        "role": "Senior Harvester Specialist",
+        "region": "MP",
+        "phone": "+91 98260 77412",
+        "email": "sunder@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0104",
+        "active_job_id": "SR-26- 0122",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 22.9774,
+          "lng": 75.8239,
+          "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
         "last_coordinates": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 22.9774,
+          "lng": 75.8239,
+          "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0401",
         "leave_type": null
       },
       {
         "technician_id": "TECH-05",
-        "name": "B. Vignesh",
-        "role": "Bio-Energy Field Specialist",
-        "region": "AP",
-        "phone": "+91 97037 19368",
-        "email": "b..vignesh@krone.in",
+        "name": "Naveen Bishnoi",
+        "role": "Technical Operations Lead",
+        "region": "Haryana",
+        "phone": "+91 98120 44332",
+        "email": "naveen.bishnoi@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0105",
+        "active_job_id": "SR-26- 0180",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
         "last_coordinates": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0501",
         "leave_type": null
       },
       {
         "technician_id": "TECH-06",
-        "name": "M. Naveen Kumar",
+        "name": "Vidhyant Kumar",
         "role": "Field Service Engineer",
-        "region": "AP",
-        "phone": "+91 94401 22334",
-        "email": "m..naveen.kumar@krone.in",
+        "region": "UP",
+        "phone": "+91 98121 77889",
+        "email": "vidhyant.kumar@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0106",
+        "active_job_id": "SR-26- 0138",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 26.9038,
+          "lng": 80.2078,
+          "name": "Bangarmau Field Depot (Unnao, UP)"
         },
         "last_coordinates": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 26.9038,
+          "lng": 80.2078,
+          "name": "Bangarmau Field Depot (Unnao, UP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0601",
         "leave_type": null
       },
       {
         "technician_id": "TECH-07",
-        "name": "Palthiya Kishore",
-        "role": "Field Service Engineer",
+        "name": "Vignesh",
+        "role": "Bio-Energy Field Specialist",
         "region": "AP",
-        "phone": "+91 94402 33445",
-        "email": "palthiya.kishore@krone.in",
+        "phone": "+91 97037 19368",
+        "email": "vignesh@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0107",
+        "active_job_id": "SR-26- 0149",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
         "last_coordinates": {
-          "lat": 14.4426,
-          "lng": 79.9865,
-          "name": "Nellore Bio-Gas Service Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0701",
         "leave_type": null
       },
       {
         "technician_id": "TECH-08",
-        "name": "Nitin Gour",
-        "role": "Field Technician",
-        "region": "MP",
-        "phone": "+91 98260 44556",
-        "email": "nitin.gour@krone.in",
+        "name": "Naveen Kumar",
+        "role": "Field Service Engineer",
+        "region": "AP",
+        "phone": "+91 94401 22334",
+        "email": "naveen.kumar@krone.in",
         "status": "On Paid Job",
-        "active_job_id": "SR-26-0108",
+        "active_job_id": "SR-26- 0145",
         "active_job_title": "Field Service Execution",
         "deputation_rate_per_day": 5000.0,
         "da_rate_per_day": 2000.0,
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 22.7196,
-          "lng": 75.8577,
-          "name": "Indore Bio-Power Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
         "last_coordinates": {
-          "lat": 22.7196,
-          "lng": 75.8577,
-          "name": "Indore Bio-Power Depot"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0801",
         "leave_type": null
       },
       {
         "technician_id": "TECH-09",
-        "name": "Sunil Kumar",
-        "role": "Field Technician",
-        "region": "Punjab",
-        "phone": "+91 98141 55667",
-        "email": "sunil.kumar@krone.in",
+        "name": "Palthiya kishore",
+        "role": "Field Service Specialist",
+        "region": "AP",
+        "phone": "+91 94402 33445",
+        "email": "palthiya.kishore@krone.in",
         "status": "Available",
         "active_job_id": null,
         "active_job_title": null,
@@ -703,26 +703,26 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
         "last_coordinates": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 14.6548,
+          "lng": 79.9123,
+          "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-0901",
         "leave_type": null
       },
       {
         "technician_id": "TECH-10",
-        "name": "Sachin Jadhav",
-        "role": "Hydraulics Specialist",
-        "region": "Maharashtra",
-        "phone": "+91 98220 66778",
-        "email": "sachin.jadhav@krone.in",
+        "name": "Nitin Gour",
+        "role": "Field Service Specialist",
+        "region": "MP",
+        "phone": "+91 98260 44556",
+        "email": "nitin.gour@krone.in",
         "status": "Available",
         "active_job_id": null,
         "active_job_title": null,
@@ -731,26 +731,26 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 18.1517,
-          "lng": 74.5772,
-          "name": "Baramati Agro Hub"
+          "lat": 22.9774,
+          "lng": 75.8239,
+          "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
         "last_coordinates": {
-          "lat": 18.1517,
-          "lng": 74.5772,
-          "name": "Baramati Agro Hub"
+          "lat": 22.9774,
+          "lng": 75.8239,
+          "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-1001",
         "leave_type": null
       },
       {
         "technician_id": "TECH-11",
-        "name": "Vidhyant Kumar",
-        "role": "Field Technician",
-        "region": "Haryana",
-        "phone": "+91 98121 77889",
-        "email": "vidhyant.kumar@krone.in",
+        "name": "Gursewak Singh",
+        "role": "Harvester & Baler Tech",
+        "region": "Punjab",
+        "phone": "+91 98765 11223",
+        "email": "gursewak.singh@krone.in",
         "status": "Available",
         "active_job_id": null,
         "active_job_title": null,
@@ -759,24 +759,24 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "last_coordinates": {
-          "lat": 29.1492,
-          "lng": 75.7217,
-          "name": "Krone Service Station Hisar"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-1101",
         "leave_type": null
       },
       {
         "technician_id": "TECH-12",
         "name": "Prem Kumar",
-        "role": "Field Technician",
-        "region": "UP",
+        "role": "Field Service Technician",
+        "region": "Haryana",
         "phone": "+91 94120 88990",
         "email": "prem.kumar@krone.in",
         "status": "Available",
@@ -787,26 +787,26 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 29.4727,
-          "lng": 77.7085,
-          "name": "Muzaffarnagar Field Support Center"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
         "last_coordinates": {
-          "lat": 29.4727,
-          "lng": 77.7085,
-          "name": "Muzaffarnagar Field Support Center"
+          "lat": 28.4727,
+          "lng": 77.0985,
+          "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-1201",
         "leave_type": null
       },
       {
         "technician_id": "TECH-13",
-        "name": "Kuldeep Gill",
-        "role": "Field Technician",
+        "name": "Ravinder Bishnoi",
+        "role": "Field Support Engineer",
         "region": "Punjab",
         "phone": "+91 98142 99001",
-        "email": "kuldeep.gill@krone.in",
+        "email": "ravinder.bishnoi@krone.in",
         "status": "On Holiday/Leave",
         "active_job_id": null,
         "active_job_title": null,
@@ -815,26 +815,26 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
         "last_coordinates": {
-          "lat": 30.901,
-          "lng": 75.8573,
-          "name": "Krone Regional Ag Depot Ludhiana"
+          "lat": 29.9328,
+          "lng": 75.8152,
+          "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
         "vehicle_number": "PB-10-KR-1301",
-        "leave_type": "Casual Leave"
+        "leave_type": "Weekly Off"
       },
       {
         "technician_id": "TECH-14",
-        "name": "Rohit Deshmukh",
-        "role": "Apprentice Technician",
-        "region": "Maharashtra",
+        "name": "Vishnu",
+        "role": "Assistant Service Engineer",
+        "region": "Chhattisgarh",
         "phone": "+91 98221 00112",
-        "email": "rohit.deshmukh@krone.in",
+        "email": "vishnu@krone.in",
         "status": "On Holiday/Leave",
         "active_job_id": null,
         "active_job_title": null,
@@ -843,18 +843,18 @@
         "travel_rate_per_km": 5.0,
         "total_hours_today": 8.0,
         "current_location": {
-          "lat": 18.1517,
-          "lng": 74.5772,
-          "name": "Baramati Agro Hub"
+          "lat": 21.2514,
+          "lng": 81.6296,
+          "name": "Raipur Machinery Depot (Raipur, CG)"
         },
         "last_coordinates": {
-          "lat": 18.1517,
-          "lng": 74.5772,
-          "name": "Baramati Agro Hub"
+          "lat": 21.2514,
+          "lng": 81.6296,
+          "name": "Raipur Machinery Depot (Raipur, CG)"
         },
-        "last_ping_time": "2026-09-27T07:19:28.309802+00:00",
+        "last_ping_time": "2026-09-27T09:39:54.488172+00:00",
         "vehicle_number": "PB-10-KR-1401",
-        "leave_type": "Weekly Off"
+        "leave_type": "Casual Leave"
       }
     ],
     "jobs": [
@@ -12791,186 +12791,238 @@
         "asset_id": "AST-01",
         "asset_name": "Krone BigPack 1290 HDP High Density Baler",
         "serial_number": "BP1290-78401",
-        "client_company_name": "Reliance Industries Limited (Bio-Energy Division)",
-        "site_contact_person": "Rajinder Verma (+91 98765 43210)",
-        "location": "Ludhiana Bio-Mass Hub, Punjab",
-        "active_job_id": "SR-26-0101",
-        "service_type": "Emergency Knotter Timing Calibration",
+        "client_company_name": "Dasmesh LF - Mr. Sarabjit Singh",
+        "site_contact_person": "Mr. Sarabjit Singh (+91 98140 88210)",
+        "location": "Chuharchak - Kaunke Kalan Road, Jagraon, Punjab",
+        "active_job_id": "SR-26- 0140",
+        "service_type": "Maintenance & Knotter Check",
         "operating_hours": 1845.0,
         "health_status": "Under Service"
       },
       {
         "asset_id": "AST-02",
-        "asset_name": "Krone Fortima V 1500 Round Baler",
-        "serial_number": "FV1500-33901",
-        "client_company_name": "Punjab State Farm Cooperative Hoshiarpur",
-        "site_contact_person": "Harbhajan Mann (+91 98765 43211)",
-        "location": "Hoshiarpur Agro Complex, Punjab",
-        "active_job_id": "SR-26-0102",
-        "service_type": "Commissioning & First Season Run",
+        "asset_name": "Krone Fortima F 1600 Round Baler",
+        "serial_number": "FT1600-332901",
+        "client_company_name": "Bio fuel circle pvt.ltd - Gaurav Dashottar",
+        "site_contact_person": "Gaurav Dashottar (+91 98141 55667)",
+        "location": "Ferozepur Road, Firozpur, Punjab",
+        "active_job_id": "SR-26- 0147",
+        "service_type": "Fortima F1600 repairing and maintenance",
         "operating_hours": 920.0,
         "health_status": "Under Service"
       },
       {
         "asset_id": "AST-03",
-        "asset_name": "Krone BiG X 680 Forage Harvester",
-        "serial_number": "BX6800-45912",
-        "client_company_name": "VERBIO Bio-Gas India Pvt Ltd (Western UP Plant)",
-        "site_contact_person": "Sunil Tyagi (+91 98765 43212)",
-        "location": "Meerut Sugar Belt, Uttar Pradesh",
-        "active_job_id": "SR-26-0103",
-        "service_type": "Drum Cutterhead Knife Sharpening",
-        "operating_hours": 512.0,
-        "health_status": "Under Service"
-      },
-      {
-        "asset_id": "AST-04",
-        "asset_name": "Krone EasyCut B 870 Mower Conditioner",
-        "serial_number": "EC8700-12845",
-        "client_company_name": "SAEL Punjab Biomass Energy Project",
-        "site_contact_person": "Gurcharan Singh (+91 98765 43213)",
-        "location": "Barnala Bio-Mass Site, Punjab",
-        "active_job_id": "SR-26-0104",
-        "service_type": "Bed Oil Leakage & Cutterbar Disc Inspection",
+        "asset_name": "Krone BiG X 700 Forage Harvester",
+        "serial_number": "BX700-112045",
+        "client_company_name": "Biofuel Circle",
+        "site_contact_person": "Harman Gill (+91 98260 77412)",
+        "location": "Nh148bb, Lehra, Punjab, India, 148031",
+        "active_job_id": "SR-26- 0122",
+        "service_type": "BiG X 700 Cutterhead Maintenance",
         "operating_hours": 1240.0,
         "health_status": "Under Service"
       },
       {
-        "asset_id": "AST-05",
-        "asset_name": "Krone Swadro TC 880 Rotary Rake",
-        "serial_number": "SW8800-98321",
-        "client_company_name": "Hoshiarpur Bio-Fuels Farm Cluster",
-        "site_contact_person": "Malkit Singh (+91 98765 43214)",
-        "location": "Hoshiarpur Fields, Punjab",
-        "active_job_id": "SR-26-0105",
-        "service_type": "Rotor Height Calibration",
+        "asset_id": "AST-04",
+        "asset_name": "Krone Swadro TC 640 Rotary Rake",
+        "serial_number": "SW640-559120",
+        "client_company_name": "Guru kirpa tractor",
+        "site_contact_person": "Gurkripa Support (+91 96259 57663)",
+        "location": "Mdr102, Kulan, Haryana",
+        "active_job_id": "SR-26- 0148",
+        "service_type": "Swadro TC 640 Repair & Calibration",
         "operating_hours": 640.0,
+        "health_status": "Under Service"
+      },
+      {
+        "asset_id": "AST-05",
+        "asset_name": "Krone Bellima F 130 Round Baler",
+        "serial_number": "BL130-449120",
+        "client_company_name": "Bio fuel corporation",
+        "site_contact_person": "Govind Bhandari (+91 98120 44332)",
+        "location": "Bangarmau, Unnao, Uttar Pradesh",
+        "active_job_id": "SR-26- 0180",
+        "service_type": "Ground Clearance Improvement",
+        "operating_hours": 512.0,
         "health_status": "Under Service"
       }
     ],
     "daily_shifts": [
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-27",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-27",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-27",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
-        "date": "2026-09-27",
-        "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
-      },
-      {
-        "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
-        "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-27",
         "shift_hours": 8.0,
         "working_hours": 6.0,
         "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.8,
+        "distance_km": 58.2
+      },
+      {
+        "technician_id": "TECH-05",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-27",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-27",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
+        "region": "AP",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
+        "date": "2026-09-27",
+        "shift_hours": 8.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.8,
         "distance_km": 65.0
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-26",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-26",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-26",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-26",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-26",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-26",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-26",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -12981,61 +13033,87 @@
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-25",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-25",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-25",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-25",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-25",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-25",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-25",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -13046,61 +13124,87 @@
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-24",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-24",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-24",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-24",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-24",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-24",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-24",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -13111,61 +13215,87 @@
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-23",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-23",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-23",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-23",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-23",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-23",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-23",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -13176,61 +13306,87 @@
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-22",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-22",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-22",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-22",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-22",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-22",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-22",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -13241,61 +13397,87 @@
       },
       {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
-        "region": "Punjab",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-21",
         "shift_hours": 8.0,
         "working_hours": 6.5,
         "travelling_hours": 1.5,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 84.6
+        "distance_km": 72.4
       },
       {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
-        "region": "Haryana",
-        "customer_company": "Reliance Industries Limited",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
         "date": "2026-09-21",
         "shift_hours": 8.0,
         "working_hours": 5.5,
         "travelling_hours": 1.8,
         "unauthorized_hours": 0.5,
         "base_idle_hours": 0.2,
-        "distance_km": 92.4
+        "distance_km": 88.6
       },
       {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Adani Agri Logistics Ltd",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
         "date": "2026-09-21",
         "shift_hours": 8.0,
         "working_hours": 7.0,
         "travelling_hours": 1.0,
         "unauthorized_hours": 0.0,
         "base_idle_hours": 0.0,
-        "distance_km": 48.0
+        "distance_km": 64.0
       },
       {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
-        "region": "Punjab",
-        "customer_company": "SAEL Punjab Biomass Energy Project",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
         "date": "2026-09-21",
         "shift_hours": 8.0,
-        "working_hours": 5.0,
-        "travelling_hours": 2.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
         "unauthorized_hours": 0.0,
-        "base_idle_hours": 1.0,
-        "distance_km": 76.5
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
       },
       {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-21",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-21",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
         "region": "AP",
-        "customer_company": "Reliance Industries Limited (RIL-Nellore)",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-21",
         "shift_hours": 8.0,
         "working_hours": 6.0,
@@ -13308,24 +13490,24 @@
     "telematics_routes": {
       "TECH-01": {
         "technician_id": "TECH-01",
-        "technician_name": "Gurpreet Singh",
+        "technician_name": "Sunny Kumar",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13333,11 +13515,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13346,11 +13528,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13361,53 +13543,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-02": {
         "technician_id": "TECH-02",
-        "technician_name": "Vikram Sharma",
+        "technician_name": "Sukhdeep Singh",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13415,11 +13597,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13428,11 +13610,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13443,53 +13625,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-03": {
         "technician_id": "TECH-03",
-        "technician_name": "Sunny Kumar",
+        "technician_name": "Sunil Kumar",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13497,11 +13679,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13510,11 +13692,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13525,53 +13707,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-04": {
         "technician_id": "TECH-04",
-        "technician_name": "Jaswinder Singh",
+        "technician_name": "Sunder",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13579,11 +13761,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13592,11 +13774,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13607,53 +13789,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-05": {
         "technician_id": "TECH-05",
-        "technician_name": "B. Vignesh",
+        "technician_name": "Naveen Bishnoi",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13661,11 +13843,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13674,11 +13856,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13689,53 +13871,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-06": {
         "technician_id": "TECH-06",
-        "technician_name": "M. Naveen Kumar",
+        "technician_name": "Vidhyant Kumar",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13743,11 +13925,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13756,11 +13938,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13771,53 +13953,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-07": {
         "technician_id": "TECH-07",
-        "technician_name": "Palthiya Kishore",
+        "technician_name": "Vignesh",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13825,11 +14007,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13838,11 +14020,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13853,53 +14035,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-08": {
         "technician_id": "TECH-08",
-        "technician_name": "Nitin Gour",
+        "technician_name": "Naveen Kumar",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13907,11 +14089,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -13920,11 +14102,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -13935,53 +14117,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-09": {
         "technician_id": "TECH-09",
-        "technician_name": "Sunil Kumar",
+        "technician_name": "Palthiya kishore",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -13989,11 +14171,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14002,11 +14184,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14017,53 +14199,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-10": {
         "technician_id": "TECH-10",
-        "technician_name": "Sachin Jadhav",
+        "technician_name": "Nitin Gour",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -14071,11 +14253,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14084,11 +14266,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14099,53 +14281,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-11": {
         "technician_id": "TECH-11",
-        "technician_name": "Vidhyant Kumar",
+        "technician_name": "Gursewak Singh",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -14153,11 +14335,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14166,11 +14348,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14181,30 +14363,30 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
@@ -14214,20 +14396,20 @@
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -14235,11 +14417,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14248,11 +14430,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14263,53 +14445,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-13": {
         "technician_id": "TECH-13",
-        "technician_name": "Kuldeep Gill",
+        "technician_name": "Ravinder Bishnoi",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -14317,11 +14499,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14330,11 +14512,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14345,53 +14527,53 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       },
       "TECH-14": {
         "technician_id": "TECH-14",
-        "technician_name": "Rohit Deshmukh",
+        "technician_name": "Vishnu",
         "date": "2026-09-27",
         "journey_summary": {
           "start_location": {
-            "name": "Krone Regional Hub Ludhiana",
-            "lat": 30.901,
-            "lng": 75.8573,
+            "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
+            "lat": 29.9328,
+            "lng": 75.8152,
             "departed_at": "2026-09-27T08:00:00Z"
           },
           "destination": {
-            "name": "RIL Bio-Energy Facility Barwala",
-            "lat": 30.3801,
-            "lng": 76.8402,
-            "arrived_at": "2026-09-27T09:45:00Z"
+            "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+            "lat": 29.742,
+            "lng": 75.895,
+            "arrived_at": "2026-09-27T09:30:00Z"
           },
-          "transit_duration_minutes": 105.0,
-          "unauthorized_stop_duration_minutes": 25.0,
-          "total_distance_km": 84.6,
+          "transit_duration_minutes": 90.0,
+          "unauthorized_stop_duration_minutes": 20.0,
+          "total_distance_km": 54.2,
           "anomalies_detected": 1
         },
         "raw_pings_count": 180,
@@ -14399,11 +14581,11 @@
           {
             "cluster_id": "CLUST-01",
             "centroid": {
-              "lat": 30.9015,
-              "lng": 75.857
+              "lat": 29.9328,
+              "lng": 75.8152
             },
-            "radius_meters": 450.0,
-            "location_name": "Ludhiana Depot Operational Zone",
+            "radius_meters": 420.0,
+            "location_name": "Krone Lehragaga Depot Base Zone",
             "pings_count": 45,
             "duration_minutes": 60.0,
             "is_job_site": false,
@@ -14412,11 +14594,11 @@
           {
             "cluster_id": "CLUST-02",
             "centroid": {
-              "lat": 30.38,
-              "lng": 76.8405
+              "lat": 29.742,
+              "lng": 75.895
             },
-            "radius_meters": 820.0,
-            "location_name": "RIL Barwala Bio-Mass Job Site",
+            "radius_meters": 650.0,
+            "location_name": "Guru Kirpa Kulan Job Site Zone",
             "pings_count": 110,
             "duration_minutes": 390.0,
             "is_job_site": true,
@@ -14427,30 +14609,30 @@
           {
             "type": "unauthorized_stop",
             "location": {
-              "lat": 30.645,
-              "lng": 76.32
+              "lat": 29.835,
+              "lng": 75.852
             },
-            "duration_minutes": 25.0,
-            "started_at": "2026-09-27T08:45:00Z",
+            "duration_minutes": 20.0,
+            "started_at": "2026-09-27T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
         "route_polyline": [
           [
-            30.901,
-            75.8573
+            29.9328,
+            75.8152
           ],
           [
-            30.85,
-            76.01
+            29.885,
+            75.832
           ],
           [
-            30.645,
-            76.32
+            29.835,
+            75.852
           ],
           [
-            30.38,
-            76.8405
+            29.742,
+            75.895
           ]
         ]
       }

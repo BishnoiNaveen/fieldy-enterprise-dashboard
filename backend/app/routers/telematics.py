@@ -23,105 +23,165 @@ def get_sync_service(request: Request) -> SyncService:
 # Authoritative Krone Job Site Directory (Geodetic Coordinates & En-Route Halts)
 # ---------------------------------------------------------------------------
 JOB_SITE_DIRECTORY: Dict[str, Dict[str, Any]] = {
-    "SR-26-0101": {
-        "name": "RIL Bio-Energy Facility Barwala",
-        "lat": 30.3800,
-        "lng": 76.8405,
-        "customer": "Reliance Industries Limited (Bio-Energy Division)",
+    "SR-26- 0148": {
+        "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+        "lat": 29.7420,
+        "lng": 75.8950,
+        "customer": "Guru kirpa tractor",
         "has_unauthorized_stop": True,
-        "halt_coords": (30.6450, 76.3200),
-        "halt_mins": 25,
-        "halt_name": "Rajpura Highway Dhaba Halt"
-    },
-    "SR-26-0102": {
-        "name": "Barwala Plant Hisar",
-        "lat": 29.3582,
-        "lng": 75.9085,
-        "customer": "Reliance Industries Limited",
-        "has_unauthorized_stop": True,
-        "halt_coords": (29.2500, 75.8100),
+        "halt_coords": (29.8350, 75.8520),
         "halt_mins": 20,
-        "halt_name": "Agroha Roadside Dhaba Halt"
+        "halt_name": "Tohana Bypass Roadside Halt"
     },
-    "SR-26-0103": {
-        "name": "Panipat Grain Silos",
-        "lat": 29.3909,
-        "lng": 76.9635,
-        "customer": "Adani Agri Logistics Ltd",
-        "has_unauthorized_stop": False,
-        "halt_coords": (29.2700, 76.8400),
-        "halt_mins": 6,
-        "halt_name": "Gohana Toll Plaza"
+    "SR-26-0148": {
+        "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
+        "lat": 29.7420,
+        "lng": 75.8950,
+        "customer": "Guru kirpa tractor",
+        "has_unauthorized_stop": True,
+        "halt_coords": (29.8350, 75.8520),
+        "halt_mins": 20,
+        "halt_name": "Tohana Bypass Roadside Halt"
     },
-    "SR-26-0104": {
-        "name": "Barnala Bio-Mass Site",
-        "lat": 30.3819,
-        "lng": 75.5469,
-        "customer": "SAEL Punjab Biomass Energy Project",
-        "has_unauthorized_stop": False,
-        "halt_coords": (30.6400, 75.7000),
-        "halt_mins": 8,
-        "halt_name": "Raikot Fuel Station"
+    "SR-26- 0140": {
+        "name": "Chuharchak, Jagraon Service Site (Punjab)",
+        "lat": 30.7850,
+        "lng": 75.4800,
+        "customer": "Dasmesh LF - Mr. Sarabjit Singh",
+        "has_unauthorized_stop": True,
+        "halt_coords": (30.4500, 75.6200),
+        "halt_mins": 15,
+        "halt_name": "Barnala-Raikot Highway Halt"
     },
-    "SR-26-0105": {
-        "name": "Dagadarthi Bio-Mass Plant Nellore",
-        "lat": 14.5855,
-        "lng": 79.9405,
-        "customer": "Reliance Industries Limited (RIL-Nellore)",
+    "SR-26-0140": {
+        "name": "Chuharchak, Jagraon Service Site (Punjab)",
+        "lat": 30.7850,
+        "lng": 75.4800,
+        "customer": "Dasmesh LF - Mr. Sarabjit Singh",
+        "has_unauthorized_stop": True,
+        "halt_coords": (30.4500, 75.6200),
+        "halt_mins": 15,
+        "halt_name": "Barnala-Raikot Highway Halt"
+    },
+    "SR-26- 0147": {
+        "name": "Ferozepur Road Site (Firozpur, Punjab)",
+        "lat": 30.9250,
+        "lng": 74.6120,
+        "customer": "Bio fuel circle pvt.ltd - Gaurav Dashottar",
         "has_unauthorized_stop": False,
-        "halt_coords": (14.5140, 79.9635),
+        "halt_coords": (30.5000, 75.2000),
         "halt_mins": 5,
-        "halt_name": "Allur Highway Junction"
+        "halt_name": "Moga Toll Plaza"
     },
-    "SR-26-0106": {
-        "name": "Kovur Bio-Mass Yard Nellore",
-        "lat": 14.4983,
-        "lng": 79.9922,
-        "customer": "RIL Nellore Bio-Mass Facility",
+    "SR-26-0147": {
+        "name": "Ferozepur Road Site (Firozpur, Punjab)",
+        "lat": 30.9250,
+        "lng": 74.6120,
+        "customer": "Bio fuel circle pvt.ltd - Gaurav Dashottar",
         "has_unauthorized_stop": False,
-        "halt_coords": (14.4700, 79.9900),
-        "halt_mins": 4,
-        "halt_name": "Pennar Bridge Toll"
-    },
-    "SR-26-0107": {
-        "name": "Kakinada Port Agro Yard",
-        "lat": 16.9891,
-        "lng": 82.2475,
-        "customer": "Kakinada Agro Energy Terminal",
-        "has_unauthorized_stop": False,
-        "halt_coords": (16.7000, 81.8000),
-        "halt_mins": 7,
-        "halt_name": "Rajahmundry Bypass Toll"
-    },
-    "SR-26-0108": {
-        "name": "Pithampur Bio-Mass Hub Indore",
-        "lat": 22.6139,
-        "lng": 75.6823,
-        "customer": "Bathinda Bio-Power Co. (MP Facility)",
-        "has_unauthorized_stop": False,
-        "halt_coords": (22.6650, 75.7700),
-        "halt_mins": 6,
-        "halt_name": "Rau Bypass Toll"
-    },
-    "SR-26-0109": {
-        "name": "Sangrur Bio-Energy Site",
-        "lat": 30.2458,
-        "lng": 75.8421,
-        "customer": "Sangrur Green Agro",
-        "has_unauthorized_stop": False,
-        "halt_coords": (30.5700, 75.8500),
+        "halt_coords": (30.5000, 75.2000),
         "halt_mins": 5,
-        "halt_name": "Ahmedgarh Toll Plaza"
+        "halt_name": "Moga Toll Plaza"
     },
-    "SR-26-0110": {
-        "name": "Ludhiana Bio-Energy Hub",
-        "lat": 30.8200,
-        "lng": 75.9800,
-        "customer": "Ludhiana Bio-Energy Hub",
+    "SR-26- 0122": {
+        "name": "Nh148bb, Lehra Site (Sangrur, Punjab)",
+        "lat": 29.9328,
+        "lng": 75.8152,
+        "customer": "Biofuel Circle",
         "has_unauthorized_stop": False,
-        "halt_coords": (30.8600, 75.9100),
+        "halt_coords": (29.9100, 75.8000),
+        "halt_mins": 5,
+        "halt_name": "Lehragaga Bypass Point"
+    },
+    "SR-26-0122": {
+        "name": "Nh148bb, Lehra Site (Sangrur, Punjab)",
+        "lat": 29.9328,
+        "lng": 75.8152,
+        "customer": "Biofuel Circle",
+        "has_unauthorized_stop": False,
+        "halt_coords": (29.9100, 75.8000),
+        "halt_mins": 5,
+        "halt_name": "Lehragaga Bypass Point"
+    },
+    "SR-26- 0180": {
+        "name": "Bangarmau Site (Unnao, Uttar Pradesh)",
+        "lat": 26.9038,
+        "lng": 80.2078,
+        "customer": "Bio fuel corporation",
+        "has_unauthorized_stop": False,
+        "halt_coords": (27.2000, 79.8000),
+        "halt_mins": 6,
+        "halt_name": "Agra-Lucknow Expressway Toll"
+    },
+    "SR-26-0180": {
+        "name": "Bangarmau Site (Unnao, Uttar Pradesh)",
+        "lat": 26.9038,
+        "lng": 80.2078,
+        "customer": "Bio fuel corporation",
+        "has_unauthorized_stop": False,
+        "halt_coords": (27.2000, 79.8000),
+        "halt_mins": 6,
+        "halt_name": "Agra-Lucknow Expressway Toll"
+    },
+    "SR-26- 0138": {
+        "name": "Nh52, Sawer Site (Indore, MP)",
+        "lat": 22.9774,
+        "lng": 75.8239,
+        "customer": "RIL-Indore - Pranav Patidar",
+        "has_unauthorized_stop": False,
+        "halt_coords": (22.8500, 75.8300),
+        "halt_mins": 5,
+        "halt_name": "Indore-Ujjain Highway Point"
+    },
+    "SR-26-0138": {
+        "name": "Nh52, Sawer Site (Indore, MP)",
+        "lat": 22.9774,
+        "lng": 75.8239,
+        "customer": "RIL-Indore - Pranav Patidar",
+        "has_unauthorized_stop": False,
+        "halt_coords": (22.8500, 75.8300),
+        "halt_mins": 5,
+        "halt_name": "Indore-Ujjain Highway Point"
+    },
+    "SR-26- 0149": {
+        "name": "Mdr019, Dagadarthi Bio-Energy Plant (Nellore, AP)",
+        "lat": 14.6548,
+        "lng": 79.9123,
+        "customer": "RIL-Nellore - Leela Baisetty",
+        "has_unauthorized_stop": False,
+        "halt_coords": (14.5800, 79.9500),
+        "halt_mins": 5,
+        "halt_name": "Dagadarthi NH16 Junction"
+    },
+    "SR-26-0149": {
+        "name": "Mdr019, Dagadarthi Bio-Energy Plant (Nellore, AP)",
+        "lat": 14.6548,
+        "lng": 79.9123,
+        "customer": "RIL-Nellore - Leela Baisetty",
+        "has_unauthorized_stop": False,
+        "halt_coords": (14.5800, 79.9500),
+        "halt_mins": 5,
+        "halt_name": "Dagadarthi NH16 Junction"
+    },
+    "SR-26- 0145": {
+        "name": "Bhuna-Tohana Rd Site (Tohana, Haryana)",
+        "lat": 29.7020,
+        "lng": 75.9050,
+        "customer": "Guru Kripa",
+        "has_unauthorized_stop": False,
+        "halt_coords": (29.8000, 75.8500),
         "halt_mins": 4,
-        "halt_name": "Sahnewal Junction"
+        "halt_name": "Tohana Entry Point"
+    },
+    "SR-26-0145": {
+        "name": "Bhuna-Tohana Rd Site (Tohana, Haryana)",
+        "lat": 29.7020,
+        "lng": 75.9050,
+        "customer": "Guru Kripa",
+        "has_unauthorized_stop": False,
+        "halt_coords": (29.8000, 75.8500),
+        "halt_mins": 4,
+        "halt_name": "Tohana Entry Point"
     }
 }
 
