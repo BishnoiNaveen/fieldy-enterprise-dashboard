@@ -1,0 +1,73 @@
+{
+  "endpoint_1_pulse": {
+    "status": 200,
+    "latency_ms": 2.91,
+    "kpis": {
+      "technicians_on_paid_jobs": 8,
+      "technicians_active_total": 12,
+      "technicians_on_leave": 2,
+      "total_jobs_today": 10,
+      "jobs_completed_today": 4,
+      "fleet_utilization_pct": 66.7,
+      "machines_under_service": 5
+    },
+    "techs_count": 8,
+    "jobs_count": 10,
+    "machines_count": 5
+  },
+  "endpoint_2_sync": {
+    "status": 200,
+    "latency_ms": 12.97,
+    "sync_status": "success",
+    "records_synced": 209,
+    "source": "krone_mock"
+  },
+  "endpoint_3_productivity": {
+    "status": 200,
+    "latency_ms": 19.72,
+    "timeframe": "daily",
+    "summary": {
+      "total_working_hours": 210.0,
+      "total_travelling_hours": 52.5,
+      "total_idle_hours": 17.5,
+      "total_shift_hours": 280.0,
+      "average_utilization_pct": 93.75,
+      "total_distance_km": 2565.5,
+      "jobs_completed_count": null
+    },
+    "records_count": 5
+  },
+  "endpoint_4_telematics": {
+    "status": 200,
+    "latency_ms": 4.83,
+    "technician_id": "TECH-01",
+    "clusters_count": 3,
+    "anomalies_count": 1,
+    "total_distance_km": 110.5
+  },
+  "endpoint_5_technicians": {
+    "status": 200,
+    "latency_ms": 26.22,
+    "total_technicians": 14,
+    "sample_tech": "Gurpreet Singh"
+  },
+  "endpoint_6_jobs": {
+    "status": 200,
+    "latency_ms": 4.78,
+    "total_jobs": 10,
+    "sample_job": "SR-26-0101"
+  },
+  "frontend_preview": {
+    "status": 200,
+    "latency_ms": 4.0,
+    "html_bytes": 1239,
+    "has_root_div": true
+  },
+  "concurrent_burst": {
+    "total_requests": 50,
+    "successful_requests": 50,
+    "total_time_ms": 146.01,
+    "avg_latency_ms": 22.1,
+    "p95_latency_ms": 42.94
+  }
+}
