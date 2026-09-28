@@ -1,6 +1,6 @@
 {
-  "last_synced_at": "2026-09-28T04:51:36.129799+00:00",
-  "sync_id": "SYNC-20260928045136",
+  "last_synced_at": "2026-09-28T07:48:33.985535+00:00",
+  "sync_id": "SYNC-20260928074833",
   "source": "fieldy_database",
   "data": {
     "pulse_kpis": {
@@ -488,7 +488,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0101",
         "leave_type": null
       },
@@ -516,7 +516,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0201",
         "leave_type": null
       },
@@ -544,7 +544,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0301",
         "leave_type": null
       },
@@ -572,7 +572,7 @@
           "lng": 75.8239,
           "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0401",
         "leave_type": null
       },
@@ -600,7 +600,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0501",
         "leave_type": null
       },
@@ -628,7 +628,7 @@
           "lng": 80.2078,
           "name": "Bangarmau Field Depot (Unnao, UP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0601",
         "leave_type": null
       },
@@ -656,7 +656,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0701",
         "leave_type": null
       },
@@ -684,7 +684,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0801",
         "leave_type": null
       },
@@ -712,7 +712,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-0901",
         "leave_type": null
       },
@@ -740,7 +740,7 @@
           "lng": 75.8239,
           "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-1001",
         "leave_type": null
       },
@@ -768,7 +768,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-1101",
         "leave_type": null
       },
@@ -796,7 +796,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-1201",
         "leave_type": null
       },
@@ -824,7 +824,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-1301",
         "leave_type": "Weekly Off"
       },
@@ -852,7 +852,7 @@
           "lng": 81.6296,
           "name": "Raipur Machinery Depot (Raipur, CG)"
         },
-        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
+        "last_ping_time": "2026-09-28T07:48:33.984529+00:00",
         "vehicle_number": "PB-10-KR-1401",
         "leave_type": "Casual Leave"
       }

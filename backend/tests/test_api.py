@@ -111,7 +111,7 @@ def test_technicians_list():
     assert resp.status_code == 200
     techs = resp.json()
     assert len(techs) == 14
-    assert any(t["name"] == "Gurpreet Singh" for t in techs)
+    assert any(t["name"] == "Sunny Kumar" for t in techs)
 
 
 def test_technicians_filter_status():

@@ -120,13 +120,14 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
     );
   }
 
-  const aggregates = (data as any).aggregates || (data as any).summary || {
-    total_working_hours: 0,
-    total_travelling_hours: 0,
-    total_idle_hours: 0,
-    total_shift_hours: 0,
-    average_utilization_pct: 0,
-  };
+  const rawAggregates = (data as any).aggregates || (data as any).summary || {};
+  const totalWorking = Number(rawAggregates.total_working_hours ?? rawAggregates.working_hours ?? 0);
+  const totalTravelling = Number(rawAggregates.total_travelling_hours ?? rawAggregates.travelling_hours ?? 0);
+  const totalIdle = Number(rawAggregates.total_idle_hours ?? rawAggregates.idle_hours ?? 0);
+  const totalShift = Number(rawAggregates.total_shift_hours ?? (totalWorking + totalTravelling + totalIdle));
+  const utilization = Number(rawAggregates.fleet_utilization_rate_pct ?? rawAggregates.average_utilization_pct ?? (totalShift > 0 ? (totalWorking / totalShift) * 100 : 0));
+  const jobsCompleted = rawAggregates.jobs_completed_count ?? rawAggregates.jobs_closed_count ?? 0;
+
   const records = (data as any).records || (data as any).technician_records || [];
   const trend_data = (data as any).trend_data || [];
   const timeframe = data.timeframe;
@@ -139,7 +140,7 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
     utilization: Number(((t.utilization_rate_pct ?? t.utilization_pct) || 0).toFixed(1)),
   }));
 
-  const sortedRecords = [...records].sort((a: any, b: any) => (b.working_hours || 0) - (a.working_hours || 0));
+  const sortedRecords = [...records].sort((a: any, b: any) => (Number(b.working_hours || 0)) - (Number(a.working_hours || 0)));
 
   return (
     <div className="space-y-6">
@@ -157,7 +158,7 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-2xl font-black font-mono tracking-tight text-emerald-600 dark:text-emerald-400">
-              {aggregates.total_working_hours.toFixed(1)}h
+              {totalWorking.toFixed(1)}h
             </span>
           </div>
           <span className="text-[11px] text-emerald-600 dark:text-emerald-400 mt-2 font-medium">
@@ -177,7 +178,7 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-2xl font-black font-mono tracking-tight text-blue-600 dark:text-blue-400">
-              {aggregates.total_travelling_hours.toFixed(1)}h
+              {totalTravelling.toFixed(1)}h
             </span>
           </div>
           <span className="text-[11px] text-blue-600 dark:text-blue-400 mt-2 font-medium">
@@ -197,7 +198,7 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-2xl font-black font-mono tracking-tight text-amber-600 dark:text-amber-400">
-              {aggregates.total_idle_hours.toFixed(1)}h
+              {totalIdle.toFixed(1)}h
             </span>
           </div>
           <span className="text-[11px] text-amber-600 dark:text-amber-400 mt-2 font-medium">
@@ -217,7 +218,7 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-2xl font-black font-mono tracking-tight">
-              {aggregates.total_shift_hours.toFixed(1)}h
+              {totalShift.toFixed(1)}h
             </span>
           </div>
           <span className={`text-[11px] mt-2 font-mono ${textMuted}`}>
@@ -237,11 +238,11 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
           </div>
           <div className="flex items-baseline gap-1.5">
             <span className="text-2xl font-black font-mono tracking-tight text-emerald-600 dark:text-emerald-400">
-              {aggregates.fleet_utilization_rate_pct.toFixed(1)}%
+              {utilization.toFixed(1)}%
             </span>
           </div>
           <span className={`text-[11px] mt-2 font-medium ${textMuted}`}>
-            {aggregates.jobs_completed_count} jobs closed
+            {jobsCompleted} jobs closed
           </span>
         </div>
       </div>
@@ -399,27 +400,27 @@ export const ProductivityCharts: React.FC<ProductivityChartsProps> = ({
                   </td>
                   <td className="py-3 px-4 font-medium">{r.region}</td>
                   <td className="py-3 px-4 font-mono font-bold text-emerald-600 dark:text-emerald-400">
-                    {r.working_hours.toFixed(1)}h
+                    {Number(r.working_hours ?? 0).toFixed(1)}h
                   </td>
                   <td className="py-3 px-4 font-mono font-semibold text-blue-600 dark:text-blue-400">
-                    {r.travelling_hours.toFixed(1)}h
+                    {Number(r.travelling_hours ?? 0).toFixed(1)}h
                   </td>
                   <td className="py-3 px-4 font-mono text-amber-600 dark:text-amber-400">
-                    {r.idle_hours.toFixed(1)}h
+                    {Number(r.idle_hours ?? 0).toFixed(1)}h
                   </td>
                   <td className="py-3 px-4 font-mono font-bold">
-                    {r.shift_hours.toFixed(1)}h
+                    {Number(r.shift_hours ?? ((r.working_hours ?? 0) + (r.travelling_hours ?? 0) + (r.idle_hours ?? 0))).toFixed(1)}h
                   </td>
                   <td className="py-3 px-4">
                     <div className="flex items-center gap-2">
                       <div className="w-16 h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
                         <div
                           className="h-full bg-emerald-500 rounded-full"
-                          style={{ width: `${Math.min(100, r.utilization_rate_pct)}%` }}
+                          style={{ width: `${Math.min(100, Number(r.utilization_rate_pct ?? r.utilization_pct ?? 0))}%` }}
                         />
                       </div>
                       <span className="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                        {r.utilization_rate_pct.toFixed(1)}%
+                        {Number(r.utilization_rate_pct ?? r.utilization_pct ?? 0).toFixed(1)}%
                       </span>
                     </div>
                   </td>
