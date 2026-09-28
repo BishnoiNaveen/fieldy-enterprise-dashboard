@@ -1,6 +1,6 @@
 {
-  "last_synced_at": "2026-09-27T09:39:54.490633+00:00",
-  "sync_id": "SYNC-20260927093954",
+  "last_synced_at": "2026-09-28T04:51:36.129799+00:00",
+  "sync_id": "SYNC-20260928045136",
   "source": "fieldy_database",
   "data": {
     "pulse_kpis": {
@@ -152,14 +152,14 @@
         "name": "Ravinder Bishnoi",
         "region": "Punjab",
         "leave_type": "Weekly Off",
-        "return_date": "2026-09-28"
+        "return_date": "2026-09-29"
       },
       {
         "technician_id": "TECH-14",
         "name": "Vishnu",
         "region": "Chhattisgarh",
         "leave_type": "Casual Leave",
-        "return_date": "2026-09-28"
+        "return_date": "2026-09-29"
       }
     ],
     "today_jobs": [
@@ -488,7 +488,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0101",
         "leave_type": null
       },
@@ -516,7 +516,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0201",
         "leave_type": null
       },
@@ -544,7 +544,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0301",
         "leave_type": null
       },
@@ -572,7 +572,7 @@
           "lng": 75.8239,
           "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0401",
         "leave_type": null
       },
@@ -600,7 +600,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0501",
         "leave_type": null
       },
@@ -628,7 +628,7 @@
           "lng": 80.2078,
           "name": "Bangarmau Field Depot (Unnao, UP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0601",
         "leave_type": null
       },
@@ -656,7 +656,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0701",
         "leave_type": null
       },
@@ -684,7 +684,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0801",
         "leave_type": null
       },
@@ -712,7 +712,7 @@
           "lng": 79.9123,
           "name": "Nellore Bio-Energy Base (Dagadarthi, AP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-0901",
         "leave_type": null
       },
@@ -740,7 +740,7 @@
           "lng": 75.8239,
           "name": "Sawer Service Station (Indore/Sawer, MP)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-1001",
         "leave_type": null
       },
@@ -768,7 +768,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-1101",
         "leave_type": null
       },
@@ -796,7 +796,7 @@
           "lng": 77.0985,
           "name": "Krone Gurugram HQ (Qutab Plaza, Gurugram)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-1201",
         "leave_type": null
       },
@@ -824,7 +824,7 @@
           "lng": 75.8152,
           "name": "Krone Lehragaga Depot (Sangrur, Punjab)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.483163+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-1301",
         "leave_type": "Weekly Off"
       },
@@ -852,7 +852,7 @@
           "lng": 81.6296,
           "name": "Raipur Machinery Depot (Raipur, CG)"
         },
-        "last_ping_time": "2026-09-27T09:39:54.488172+00:00",
+        "last_ping_time": "2026-09-28T04:51:36.128256+00:00",
         "vehicle_number": "PB-10-KR-1401",
         "leave_type": "Casual Leave"
       }
@@ -12854,6 +12854,97 @@
         "technician_name": "Sunny Kumar",
         "region": "Haryana",
         "customer_company": "Guru kirpa tractor",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.5,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.0,
+        "distance_km": 72.4
+      },
+      {
+        "technician_id": "TECH-02",
+        "technician_name": "Sukhdeep Singh",
+        "region": "Punjab",
+        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.8,
+        "unauthorized_hours": 0.5,
+        "base_idle_hours": 0.2,
+        "distance_km": 88.6
+      },
+      {
+        "technician_id": "TECH-03",
+        "technician_name": "Sunil Kumar",
+        "region": "Punjab",
+        "customer_company": "Bio fuel circle pvt.ltd",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 7.0,
+        "travelling_hours": 1.0,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.0,
+        "distance_km": 64.0
+      },
+      {
+        "technician_id": "TECH-04",
+        "technician_name": "Sunder",
+        "region": "MP",
+        "customer_company": "Biofuel Circle",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.8,
+        "distance_km": 58.2
+      },
+      {
+        "technician_id": "TECH-05",
+        "technician_name": "Naveen Bishnoi",
+        "region": "Haryana",
+        "customer_company": "Bio fuel corporation",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 6.5,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.3,
+        "distance_km": 78.0
+      },
+      {
+        "technician_id": "TECH-06",
+        "technician_name": "Vidhyant Kumar",
+        "region": "UP",
+        "customer_company": "RIL-Indore - Pranav Patidar",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 5.5,
+        "travelling_hours": 1.6,
+        "unauthorized_hours": 0.4,
+        "base_idle_hours": 0.5,
+        "distance_km": 82.5
+      },
+      {
+        "technician_id": "TECH-07",
+        "technician_name": "Vignesh",
+        "region": "AP",
+        "customer_company": "RIL-Nellore - Leela Baisetty",
+        "date": "2026-09-28",
+        "shift_hours": 8.0,
+        "working_hours": 6.0,
+        "travelling_hours": 1.2,
+        "unauthorized_hours": 0.0,
+        "base_idle_hours": 0.8,
+        "distance_km": 65.0
+      },
+      {
+        "technician_id": "TECH-01",
+        "technician_name": "Sunny Kumar",
+        "region": "Haryana",
+        "customer_company": "Guru kirpa tractor",
         "date": "2026-09-27",
         "shift_hours": 8.0,
         "working_hours": 6.5,
@@ -13388,97 +13479,6 @@
         "region": "AP",
         "customer_company": "RIL-Nellore - Leela Baisetty",
         "date": "2026-09-22",
-        "shift_hours": 8.0,
-        "working_hours": 6.0,
-        "travelling_hours": 1.2,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 0.8,
-        "distance_km": 65.0
-      },
-      {
-        "technician_id": "TECH-01",
-        "technician_name": "Sunny Kumar",
-        "region": "Haryana",
-        "customer_company": "Guru kirpa tractor",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 6.5,
-        "travelling_hours": 1.5,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 0.0,
-        "distance_km": 72.4
-      },
-      {
-        "technician_id": "TECH-02",
-        "technician_name": "Sukhdeep Singh",
-        "region": "Punjab",
-        "customer_company": "Dasmesh LF - Mr. Sarabjit Singh",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 5.5,
-        "travelling_hours": 1.8,
-        "unauthorized_hours": 0.5,
-        "base_idle_hours": 0.2,
-        "distance_km": 88.6
-      },
-      {
-        "technician_id": "TECH-03",
-        "technician_name": "Sunil Kumar",
-        "region": "Punjab",
-        "customer_company": "Bio fuel circle pvt.ltd",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 7.0,
-        "travelling_hours": 1.0,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 0.0,
-        "distance_km": 64.0
-      },
-      {
-        "technician_id": "TECH-04",
-        "technician_name": "Sunder",
-        "region": "MP",
-        "customer_company": "Biofuel Circle",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 6.0,
-        "travelling_hours": 1.2,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 0.8,
-        "distance_km": 58.2
-      },
-      {
-        "technician_id": "TECH-05",
-        "technician_name": "Naveen Bishnoi",
-        "region": "Haryana",
-        "customer_company": "Bio fuel corporation",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 6.5,
-        "travelling_hours": 1.2,
-        "unauthorized_hours": 0.0,
-        "base_idle_hours": 0.3,
-        "distance_km": 78.0
-      },
-      {
-        "technician_id": "TECH-06",
-        "technician_name": "Vidhyant Kumar",
-        "region": "UP",
-        "customer_company": "RIL-Indore - Pranav Patidar",
-        "date": "2026-09-21",
-        "shift_hours": 8.0,
-        "working_hours": 5.5,
-        "travelling_hours": 1.6,
-        "unauthorized_hours": 0.4,
-        "base_idle_hours": 0.5,
-        "distance_km": 82.5
-      },
-      {
-        "technician_id": "TECH-07",
-        "technician_name": "Vignesh",
-        "region": "AP",
-        "customer_company": "RIL-Nellore - Leela Baisetty",
-        "date": "2026-09-21",
         "shift_hours": 8.0,
         "working_hours": 6.0,
         "travelling_hours": 1.2,
@@ -13491,19 +13491,19 @@
       "TECH-01": {
         "technician_id": "TECH-01",
         "technician_name": "Sunny Kumar",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13547,7 +13547,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13573,19 +13573,19 @@
       "TECH-02": {
         "technician_id": "TECH-02",
         "technician_name": "Sukhdeep Singh",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13629,7 +13629,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13655,19 +13655,19 @@
       "TECH-03": {
         "technician_id": "TECH-03",
         "technician_name": "Sunil Kumar",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13711,7 +13711,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13737,19 +13737,19 @@
       "TECH-04": {
         "technician_id": "TECH-04",
         "technician_name": "Sunder",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13793,7 +13793,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13819,19 +13819,19 @@
       "TECH-05": {
         "technician_id": "TECH-05",
         "technician_name": "Naveen Bishnoi",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13875,7 +13875,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13901,19 +13901,19 @@
       "TECH-06": {
         "technician_id": "TECH-06",
         "technician_name": "Vidhyant Kumar",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -13957,7 +13957,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -13983,19 +13983,19 @@
       "TECH-07": {
         "technician_id": "TECH-07",
         "technician_name": "Vignesh",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14039,7 +14039,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14065,19 +14065,19 @@
       "TECH-08": {
         "technician_id": "TECH-08",
         "technician_name": "Naveen Kumar",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14121,7 +14121,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14147,19 +14147,19 @@
       "TECH-09": {
         "technician_id": "TECH-09",
         "technician_name": "Palthiya kishore",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14203,7 +14203,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14229,19 +14229,19 @@
       "TECH-10": {
         "technician_id": "TECH-10",
         "technician_name": "Nitin Gour",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14285,7 +14285,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14311,19 +14311,19 @@
       "TECH-11": {
         "technician_id": "TECH-11",
         "technician_name": "Gursewak Singh",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14367,7 +14367,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14393,19 +14393,19 @@
       "TECH-12": {
         "technician_id": "TECH-12",
         "technician_name": "Prem Kumar",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14449,7 +14449,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14475,19 +14475,19 @@
       "TECH-13": {
         "technician_id": "TECH-13",
         "technician_name": "Ravinder Bishnoi",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14531,7 +14531,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
@@ -14557,19 +14557,19 @@
       "TECH-14": {
         "technician_id": "TECH-14",
         "technician_name": "Vishnu",
-        "date": "2026-09-27",
+        "date": "2026-09-28",
         "journey_summary": {
           "start_location": {
             "name": "Krone Lehragaga Depot (Sangrur, Punjab)",
             "lat": 29.9328,
             "lng": 75.8152,
-            "departed_at": "2026-09-27T08:00:00Z"
+            "departed_at": "2026-09-28T08:00:00Z"
           },
           "destination": {
             "name": "Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)",
             "lat": 29.742,
             "lng": 75.895,
-            "arrived_at": "2026-09-27T09:30:00Z"
+            "arrived_at": "2026-09-28T09:30:00Z"
           },
           "transit_duration_minutes": 90.0,
           "unauthorized_stop_duration_minutes": 20.0,
@@ -14613,7 +14613,7 @@
               "lng": 75.852
             },
             "duration_minutes": 20.0,
-            "started_at": "2026-09-27T08:40:00Z",
+            "started_at": "2026-09-28T08:40:00Z",
             "description": "Vehicle stationary > 15 min outside 5km authorized corridor"
           }
         ],
