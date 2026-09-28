@@ -393,47 +393,47 @@ export const TechnicianDetailView: React.FC<TechnicianDetailViewProps> = ({
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl border border-emerald-300 dark:border-emerald-800/80 bg-emerald-50/80 dark:bg-emerald-950/30">
-            <span className="text-xs font-bold text-emerald-800 dark:text-emerald-300">
+          <div className="p-4 rounded-xl border border-emerald-300 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-950/40 shadow-sm">
+            <span className="text-xs font-bold uppercase tracking-wider text-emerald-950 dark:text-emerald-300 font-mono">
               Productive Working Hours (H_w)
             </span>
-            <div className="flex items-baseline gap-2 mt-1">
-              <span className="text-2xl font-black font-mono text-emerald-900 dark:text-emerald-200">
+            <div className="flex items-baseline gap-2 mt-1.5">
+              <span className="text-3xl font-black font-mono text-emerald-950 dark:text-emerald-200">
                 {tech.workingHours}h
               </span>
-              <span className="text-xs text-emerald-700 dark:text-emerald-400 font-medium">On-site servicing</span>
+              <span className="text-xs text-emerald-800 dark:text-emerald-400 font-bold">On-site servicing</span>
             </div>
-            <p className="text-[11px] text-emerald-800 dark:text-emerald-400 mt-2 font-medium">
+            <p className="text-xs text-emerald-900 dark:text-emerald-300 mt-2 font-medium">
               Direct machine repair & knotter alignment
             </p>
           </div>
 
-          <div className="p-4 rounded-xl border border-blue-300 dark:border-blue-800/80 bg-blue-50/80 dark:bg-blue-950/30">
-            <span className="text-xs font-bold text-blue-800 dark:text-blue-300">
+          <div className="p-4 rounded-xl border border-blue-300 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/40 shadow-sm">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-950 dark:text-blue-300 font-mono">
               Transit & Highway Travel (H_t)
             </span>
-            <div className="flex items-baseline gap-2 mt-1">
-              <span className="text-2xl font-black font-mono text-blue-900 dark:text-blue-200">
+            <div className="flex items-baseline gap-2 mt-1.5">
+              <span className="text-3xl font-black font-mono text-blue-950 dark:text-blue-200">
                 {tech.travelHours}h
               </span>
-              <span className="text-xs text-blue-700 dark:text-blue-400 font-medium">Bolero transit</span>
+              <span className="text-xs text-blue-800 dark:text-blue-400 font-bold">Bolero transit</span>
             </div>
-            <p className="text-[11px] text-blue-800 dark:text-blue-400 mt-2 font-medium">
+            <p className="text-xs text-blue-900 dark:text-blue-300 mt-2 font-medium">
               Verified route distance: {tech.totalKm} KM logged
             </p>
           </div>
 
-          <div className="p-4 rounded-xl border border-slate-300 dark:border-slate-800 bg-slate-100/80 dark:bg-slate-900/60">
-            <span className="text-xs font-bold text-slate-800 dark:text-slate-300">
+          <div className="p-4 rounded-xl border border-slate-300 dark:border-slate-800 bg-slate-100 dark:bg-slate-900/60 shadow-sm">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-300 font-mono">
               Idle & Buffer Hours (H_i)
             </span>
-            <div className="flex items-baseline gap-2 mt-1">
-              <span className={`text-2xl font-black font-mono text-slate-900 dark:text-white`}>
+            <div className="flex items-baseline gap-2 mt-1.5">
+              <span className="text-3xl font-black font-mono text-slate-950 dark:text-white">
                 {tech.idleHours}h
               </span>
-              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Halts & breaks</span>
+              <span className="text-xs text-slate-700 dark:text-slate-400 font-bold">Halts & breaks</span>
             </div>
-            <p className="text-[11px] text-slate-600 dark:text-slate-400 mt-2">
+            <p className="text-xs text-slate-800 dark:text-slate-300 mt-2 font-medium">
               Compliant within standard shift allowances
             </p>
           </div>
@@ -462,16 +462,16 @@ export const TechnicianDetailView: React.FC<TechnicianDetailViewProps> = ({
             <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
               {tech.recentJobs.map((j, idx) => (
                 <tr key={idx} className="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition">
-                  <td className="py-2.5 px-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                  <td className="py-2.5 px-3 font-mono font-bold text-emerald-700 dark:text-emerald-400">
                     {j.jobId}
                   </td>
-                  <td className="py-2.5 px-3 text-slate-500 font-mono">
+                  <td className="py-2.5 px-3 text-slate-700 dark:text-slate-400 font-mono font-medium">
                     {j.date}
                   </td>
-                  <td className={`py-2.5 px-3 font-medium ${textHeader}`}>
+                  <td className={`py-2.5 px-3 font-bold ${textHeader}`}>
                     {j.customer}
                   </td>
-                  <td className="py-2.5 px-3 text-slate-600 dark:text-slate-300">
+                  <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-slate-200">
                     {j.machine}
                   </td>
                   <td className="py-2.5 px-3">
