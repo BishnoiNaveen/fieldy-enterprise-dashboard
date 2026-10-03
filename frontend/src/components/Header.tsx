@@ -18,6 +18,7 @@ interface HeaderProps {
   isAutoSyncEnabled?: boolean;
   onToggleAutoSync?: () => void;
   onOpenApiModal?: () => void;
+  onOpenSecurityModal?: () => void;
   dataSource?: string;
   totalJobsCount?: number;
 }
@@ -33,6 +34,7 @@ export const Header: React.FC<HeaderProps> = ({
   isAutoSyncEnabled = true,
   onToggleAutoSync,
   onOpenApiModal,
+  onOpenSecurityModal,
   dataSource,
   totalJobsCount,
 }) => {
@@ -179,6 +181,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Cloud className="w-3.5 h-3.5 text-emerald-600" />
               <span>{dataSource === 'fieldy_live_cloud' ? 'Cloud API: Live' : `Fieldy API (${totalJobsCount || 483})`}</span>
+            </button>
+          )}
+
+          {/* Security Audit Trigger */}
+          {onOpenSecurityModal && (
+            <button
+              onClick={onOpenSecurityModal}
+              className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-mono font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20 hover:bg-emerald-500/20 transition cursor-pointer"
+              title="View Enterprise Security Posture & OWASP Audit"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+              <span>AAA Hardened</span>
             </button>
           )}
 

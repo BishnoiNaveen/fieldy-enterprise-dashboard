@@ -447,3 +447,73 @@ class SyncService:
                 break
 
         return self.mock_generator.generate_default_route(technician_id, date_str, tech_name)
+
+    def get_all_amcs(self) -> List[Dict[str, Any]]:
+        """Returns parsed authentic Krone Annual Maintenance Contracts (AMCs)."""
+        raw_amcs = self._state["data"].get("amcs", [])
+        parsed_amcs = []
+
+        for amc in raw_amcs:
+            v = amc.get("values", {})
+            amc_id = v.get("id") or amc.get("metadata", {}).get("id", "AMC-000")
+            title = v.get("title", "Krone Annual Maintenance Contract")
+            customer = v.get("customer", "Krone Enterprise Client")
+            val_str = str(v.get("value", "0")).replace(",", "")
+            try:
+                total_val = float(val_str)
+            except ValueError:
+                total_val = 0.0
+
+            visits_str = str(v.get("no_of_visit", "12"))
+            try:
+                no_visits = int(visits_str)
+            except ValueError:
+                no_visits = 12
+
+            # Parse custom monthly retainer
+            retainer_str = str(v.get("83c8c9e3-7986-4a3c-8824-4d26cc70dcd1", "0")).replace(",", "")
+            try:
+                retainer = float(retainer_str)
+            except ValueError:
+                retainer = round(total_val / 12.0, 2) if total_val > 0 else 0.0
+
+            # Emergency and PM visit rates
+            try:
+                emerg_rate = float(v.get("31396d7f-9e70-4712-9266-6caf3d52c6ab", 5000))
+            except ValueError:
+                emerg_rate = 5000.0
+
+            try:
+                pm_rate = float(v.get("aa5bf1f4-17c5-40b5-a4c7-8b9dbbfef4ae", 2000))
+            except ValueError:
+                pm_rate = 2000.0
+
+            assets = v.get("asset_or_service", [])
+            if isinstance(assets, str):
+                assets = [assets]
+
+            parsed_amcs.append({
+                "amc_id": amc_id,
+                "title": title,
+                "customer": customer,
+                "customer_email": v.get("customer_email"),
+                "customer_phone": v.get("customer_phone"),
+                "status": v.get("status", "Active"),
+                "total_value": total_val,
+                "no_of_visits": no_visits,
+                "start_date": v.get("start_date", "01-09-2026"),
+                "expiry_date": v.get("expiry_date", "31-08-2027"),
+                "monthly_retainer": retainer,
+                "emergency_visit_rate": emerg_rate,
+                "pm_visit_rate": pm_rate,
+                "assets": assets,
+                "description": v.get("description", "")
+            })
+
+        return parsed_amcs
+
+    def get_amc_by_id(self, amc_id: str) -> Optional[Dict[str, Any]]:
+        for amc in self.get_all_amcs():
+            if amc["amc_id"].lower() == amc_id.lower():
+                return amc
+        return None

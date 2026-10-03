@@ -346,3 +346,136 @@ class JobsListResponse(BaseModel):
     status: str = "success"
     count: int
     data: List[JobDetail]
+
+
+# =====================================================================
+# 8. AMC & CONTRACT SCHEMAS
+# =====================================================================
+
+class AMCDetail(BaseModel):
+    """Annual Maintenance Contract model parsed from Fieldy records."""
+    model_config = ConfigDict(populate_by_name=True, from_attributes=True)
+    amc_id: str
+    title: str
+    customer: str
+    customer_email: Optional[str] = None
+    customer_phone: Optional[str] = None
+    status: str = "Active"
+    total_value: float = 0.0
+    no_of_visits: int = 12
+    start_date: str
+    expiry_date: str
+    monthly_retainer: Optional[float] = 0.0
+    emergency_visit_rate: Optional[float] = 5000.0
+    pm_visit_rate: Optional[float] = 2000.0
+    assets: List[str] = Field(default_factory=list)
+    description: Optional[str] = None
+
+
+class AMCsListResponse(BaseModel):
+    """Response for GET /api/amcs."""
+    model_config = ConfigDict(populate_by_name=True, from_attributes=True)
+    status: str = "success"
+    count: int
+    data: List[AMCDetail]
+
+
+# =====================================================================
+# 9. FORENSIC BILL & KM AUDIT SCHEMAS (12-PILLAR SYSTEM)
+# =====================================================================
+
+class ForensicCheckItem(BaseModel):
+    pillar: str
+    name: str
+    passed: bool
+    details: str
+    disallowed_amount: float = 0.0
+
+
+class BillAuditRequest(BaseModel):
+    technician_id: str
+    technician_name: str
+    date: str
+    claimed_km: float = Field(..., ge=0.0)
+    vehicle_type: str = Field("bike", description="bike (₹5/km) or car (₹15/km)")
+    claimed_da: float = Field(0.0, ge=0.0)
+    claimed_hotel: float = Field(0.0, ge=0.0)
+    stay_provided_by_client: bool = False
+    duty_hours: float = Field(8.0, ge=0.0)
+    job_id: Optional[str] = None
+    trip_purpose: Optional[str] = "Client Machine Service"
+
+
+class BillAuditResponse(BaseModel):
+    audit_id: str
+    timestamp: str
+    technician_id: str
+    technician_name: str
+    date: str
+    classification: str
+    verified_gps_km: float
+    claimed_km: float
+    admissible_km: float
+    disallowed_km: float
+    rate_per_km: float
+    km_amount_admissible: float
+    claimed_da: float
+    admissible_da: float
+    disallowed_da: float
+    claimed_hotel: float
+    admissible_hotel: float
+    disallowed_hotel: float
+    total_claimed_amount: float
+    total_admissible_amount: float
+    total_disallowed_recovery: float
+    verdict: str  # APPROVED | FLAGGED_PARTIAL_APPROVAL | REJECTED_OVERCLAIM
+    forensic_checks: List[ForensicCheckItem]
+    action_required: str
+
+
+# =====================================================================
+# 10. AUTOMATION & COMMUNICATION SCHEMAS
+# =====================================================================
+
+class WhatsAppDispatchRequest(BaseModel):
+    job_id: str
+    recipient_phone: str
+    recipient_name: str
+    recipient_role: str = "technician"  # technician | customer
+    custom_message: Optional[str] = None
+
+
+class WhatsAppDispatchResponse(BaseModel):
+    status: str
+    message_id: str
+    recipient: str
+    formatted_body: str
+    dispatched_at: str
+
+
+class EmailReportRequest(BaseModel):
+    recipient_email: str
+    report_type: str = "service_job_card"
+    subject: str
+    job_id: Optional[str] = None
+
+
+class EmailReportResponse(BaseModel):
+    status: str
+    email_id: str
+    recipient: str
+    subject: str
+    sent_at: str
+
+
+# =====================================================================
+# 11. SECURITY AUDIT SCHEMA
+# =====================================================================
+
+class SecurityAuditResponse(BaseModel):
+    status: str
+    overall_rating: str
+    timestamp: str
+    checks: Dict[str, Any]
+    active_hardening: List[str]
+

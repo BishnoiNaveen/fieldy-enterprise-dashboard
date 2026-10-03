@@ -374,3 +374,129 @@ export interface FilterState {
   endDate: string;
   searchQuery: string;
 }
+
+// =====================================================================
+// 9. AMC CONTRACT INTERFACE
+// =====================================================================
+
+export interface AMCDetail {
+  amc_id: string;
+  title: string;
+  customer: string;
+  customer_email?: string;
+  customer_phone?: string;
+  status: string;
+  total_value: number;
+  no_of_visits: number;
+  start_date: string;
+  expiry_date: string;
+  monthly_retainer?: number;
+  emergency_visit_rate?: number;
+  pm_visit_rate?: number;
+  assets: string[];
+  description?: string;
+}
+
+export interface AMCsListResponse {
+  count: number;
+  amcs: AMCDetail[];
+  total_contract_value: number;
+  active_count: number;
+}
+
+// =====================================================================
+// 10. FORENSIC BILL AUDIT INTERFACES
+// =====================================================================
+
+export interface ForensicCheckItem {
+  pillar: string;
+  name: string;
+  passed: boolean;
+  details: string;
+  disallowed_amount?: number;
+}
+
+export interface BillAuditRequest {
+  technician_id: string;
+  technician_name: string;
+  date: string;
+  claimed_km: number;
+  vehicle_type: 'bike' | 'car';
+  claimed_da: number;
+  claimed_hotel: number;
+  stay_provided_by_client: boolean;
+  duty_hours: number;
+  job_id?: string;
+  trip_purpose?: string;
+}
+
+export interface BillAuditResponse {
+  audit_id: string;
+  timestamp: string;
+  technician_id: string;
+  technician_name: string;
+  date: string;
+  classification: string;
+  verified_gps_km: number;
+  claimed_km: number;
+  admissible_km: number;
+  disallowed_km: number;
+  rate_per_km: number;
+  km_amount_admissible: number;
+  claimed_da: number;
+  admissible_da: number;
+  disallowed_da: number;
+  claimed_hotel: number;
+  admissible_hotel: number;
+  disallowed_hotel: number;
+  total_claimed_amount: number;
+  total_admissible_amount: number;
+  total_disallowed_recovery: number;
+  verdict: 'APPROVED' | 'FLAGGED_PARTIAL_APPROVAL' | 'REJECTED_OVERCLAIM';
+  forensic_checks: ForensicCheckItem[];
+  action_required: string;
+}
+
+// =====================================================================
+// 11. AUTOMATIONS & SECURITY INTERFACES
+// =====================================================================
+
+export interface WhatsAppDispatchRequest {
+  job_id: string;
+  recipient_phone: string;
+  recipient_name: string;
+  recipient_role?: 'technician' | 'customer';
+  custom_message?: string;
+}
+
+export interface WhatsAppDispatchResponse {
+  status: string;
+  message_id: string;
+  recipient: string;
+  formatted_body: string;
+  dispatched_at: string;
+}
+
+export interface EmailReportRequest {
+  recipient_email: string;
+  report_type?: string;
+  subject: string;
+  job_id?: string;
+}
+
+export interface EmailReportResponse {
+  status: string;
+  email_id: string;
+  recipient: string;
+  subject: string;
+  sent_at: string;
+}
+
+export interface SecurityAuditResponse {
+  status: string;
+  overall_rating: string;
+  timestamp: string;
+  checks: Record<string, { status: string; details: string }>;
+  active_hardening: string[];
+}
+

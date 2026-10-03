@@ -21,7 +21,11 @@ import {
   Briefcase,
   ShieldCheck,
   CheckCircle2,
-  CalendarOff
+  CalendarOff,
+  FileSearch,
+  FileText,
+  Zap,
+  ShieldAlert
 } from 'lucide-react';
 import { 
   PulseResponse, 
@@ -43,6 +47,10 @@ import { AnomalyAlerts } from './components/AnomalyAlerts';
 import { AttendanceBoard } from './components/AttendanceBoard';
 import { TechnicianDetailView, ExtendedTechnicianData } from './components/TechnicianDetailView';
 import { FieldyApiModal } from './components/FieldyApiModal';
+import { ForensicAuditView } from './components/ForensicAuditView';
+import { AmcsContractsView } from './components/AmcsContractsView';
+import { AutomationsView } from './components/AutomationsView';
+import { SecurityModal } from './components/SecurityModal';
 import { KRONE_FLEET_MASTER } from './utils/kroneFleetData';
 
 export const App: React.FC = () => {
@@ -51,8 +59,9 @@ export const App: React.FC = () => {
     return (localStorage.getItem('krone_theme') as 'bright' | 'dark') || 'bright';
   });
 
-  // Navigation View Tab: 'all' (Executive Command) | 'attendance' | 'telematics' | 'machines' | 'analytics'
-  const [activeTab, setActiveTab] = useState<'all' | 'attendance' | 'telematics' | 'machines' | 'analytics'>('all');
+  // Navigation View Tab: 'all' | 'audit' | 'amcs' | 'attendance' | 'telematics' | 'machines' | 'analytics' | 'automations'
+  const [activeTab, setActiveTab] = useState<'all' | 'audit' | 'amcs' | 'attendance' | 'telematics' | 'machines' | 'analytics' | 'automations'>('all');
+  const [isSecurityModalOpen, setIsSecurityModalOpen] = useState(false);
 
   // Attendance Pagination on Main Dashboard: 'p1' (1-7) | 'p2' (8-14) | 'all' (All 14)
   const [attendancePage, setAttendancePage] = useState<'p1' | 'p2' | 'all'>('p1');
@@ -223,6 +232,7 @@ export const App: React.FC = () => {
         isAutoSyncEnabled={isAutoSyncEnabled}
         onToggleAutoSync={() => setIsAutoSyncEnabled(!isAutoSyncEnabled)}
         onOpenApiModal={() => setIsApiModalOpen(true)}
+        onOpenSecurityModal={() => setIsSecurityModalOpen(true)}
         dataSource={pulseData?.sync_meta?.source}
         totalJobsCount={pulseData?.kpis?.total_fieldy_jobs || 483}
       />
@@ -247,7 +257,7 @@ export const App: React.FC = () => {
               isDark ? 'border-slate-800' : 'border-slate-200'
             }`}>
               <div>
-                <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>KRONE AGRICULTURE INDIA • FIELD SERVICE & TELEMATICS COMMAND</span>
                 </div>
@@ -262,10 +272,13 @@ export const App: React.FC = () => {
               }`}>
                 {[
                   { id: 'all', label: 'Executive Command', icon: Layers },
-                  { id: 'attendance', label: 'Attendance & Clock-In', icon: Clock },
+                  { id: 'audit', label: 'Forensic Bill Audit', icon: FileSearch },
+                  { id: 'amcs', label: 'AMCs & Retainers', icon: FileText },
+                  { id: 'machines', label: 'Work Orders & Machines', icon: Tractor },
+                  { id: 'attendance', label: 'Attendance & Roster', icon: Clock },
                   { id: 'telematics', label: 'Fleet Map & Radar', icon: MapPin },
-                  { id: 'machines', label: 'Machines & Jobs', icon: Tractor },
                   { id: 'analytics', label: 'Hours & Analytics', icon: TrendingUp },
+                  { id: 'automations', label: 'Automations Hub', icon: Zap },
                 ].map((tab) => {
                   const Icon = tab.icon;
                   const isActive = activeTab === tab.id;
@@ -537,6 +550,21 @@ export const App: React.FC = () => {
                 />
               </div>
             )}
+
+            {/* TAB 6: 12-PILLAR FORENSIC BILL & KM AUDIT */}
+            {activeTab === 'audit' && (
+              <ForensicAuditView theme={theme} />
+            )}
+
+            {/* TAB 7: AMCS & COMMERCIAL CONTRACTS */}
+            {activeTab === 'amcs' && (
+              <AmcsContractsView theme={theme} />
+            )}
+
+            {/* TAB 8: AUTOMATIONS & WHATSAPP / EMAIL HUB */}
+            {activeTab === 'automations' && (
+              <AutomationsView theme={theme} />
+            )}
           </>
         )}
       </main>
@@ -546,6 +574,13 @@ export const App: React.FC = () => {
         isOpen={isApiModalOpen}
         onClose={() => setIsApiModalOpen(false)}
         onSyncComplete={handleFreshSync}
+        theme={theme}
+      />
+
+      {/* 4. Enterprise Security & Compliance Audit Modal */}
+      <SecurityModal
+        isOpen={isSecurityModalOpen}
+        onClose={() => setIsSecurityModalOpen(false)}
         theme={theme}
       />
     </div>
