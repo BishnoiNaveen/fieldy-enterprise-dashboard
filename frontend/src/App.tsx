@@ -37,9 +37,7 @@ import {
 } from './types/dashboard';
 import { api, getBackendLiveStatus } from './services/api';
 import { Header } from './components/Header';
-import { BentoKpis } from './components/BentoKpis';
 import { LivePulseBoard } from './components/LivePulseBoard';
-import { MachineryTable } from './components/MachineryTable';
 import { FilterBar, DEFAULT_FILTER_STATE } from './components/FilterBar';
 import { ProductivityCharts } from './components/ProductivityCharts';
 import { RouteInspectorMap } from './components/RouteInspectorMap';
@@ -51,6 +49,7 @@ import { ForensicAuditView } from './components/ForensicAuditView';
 import { AmcsContractsView } from './components/AmcsContractsView';
 import { AutomationsView } from './components/AutomationsView';
 import { SecurityModal } from './components/SecurityModal';
+import { OverviewView } from './components/OverviewView';
 import { KRONE_FLEET_MASTER } from './utils/kroneFleetData';
 
 export const App: React.FC = () => {
@@ -63,8 +62,6 @@ export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'all' | 'audit' | 'amcs' | 'attendance' | 'telematics' | 'machines' | 'analytics' | 'automations'>('all');
   const [isSecurityModalOpen, setIsSecurityModalOpen] = useState(false);
 
-  // Attendance Pagination on Main Dashboard: 'p1' (1-7) | 'p2' (8-14) | 'all' (All 14)
-  const [attendancePage, setAttendancePage] = useState<'p1' | 'p2' | 'all'>('p1');
 
   // Selected Technician Detailed Page (If set, displays full-page dossier)
   const [selectedTechDetailId, setSelectedTechDetailId] = useState<string | null>(null);
@@ -271,11 +268,11 @@ export const App: React.FC = () => {
                 isDark ? 'bg-[#0B121E] border-slate-800' : 'bg-white border-slate-300 shadow-sm'
               }`}>
                 {[
-                  { id: 'all', label: 'Executive Command', icon: Layers },
+                  { id: 'all', label: 'Overview', icon: Layers },
+                  { id: 'machines', label: 'Field Operations', icon: Tractor },
+                  { id: 'attendance', label: 'Roster & Manpower', icon: Clock },
                   { id: 'audit', label: 'Forensic Bill Audit', icon: FileSearch },
                   { id: 'amcs', label: 'AMCs & Retainers', icon: FileText },
-                  { id: 'machines', label: 'Work Orders & Machines', icon: Tractor },
-                  { id: 'attendance', label: 'Attendance & Roster', icon: Clock },
                   { id: 'telematics', label: 'Fleet Map & Radar', icon: MapPin },
                   { id: 'analytics', label: 'Hours & Analytics', icon: TrendingUp },
                   { id: 'automations', label: 'Automations Hub', icon: Zap },
@@ -302,178 +299,16 @@ export const App: React.FC = () => {
               </div>
             </div>
 
-            {/* 3. Executive Hero Bento Grid: Focused on Total Jobs, Working Techs, Leave Techs, Machinery */}
-            <BentoKpis
-              kpis={pulseData?.kpis ?? null}
-              isLoading={isLoadingPulse}
-              onNavigateTab={(tab) => {
-                if (tab === 'jobs' || tab === 'machines') setActiveTab('machines');
-                else if (tab === 'attendance') setActiveTab('attendance');
-                else if (tab === 'telematics') setActiveTab('telematics');
-                else if (tab === 'analytics') setActiveTab('analytics');
-                else setActiveTab('all');
-              }}
-              theme={theme}
-            />
-
-            {/* TAB 1: EXECUTIVE COMMAND (Overview with quick sections) */}
+            {/* TAB 1: SIMPLE PLAIN OVERVIEW DASHBOARD */}
             {activeTab === 'all' && (
-              <div className="space-y-6">
-                {/* Live Attendance Ticker Card with Multi-Page / Full View Controls */}
-                <div className={`rounded-2xl border p-4 sm:p-5 ${
-                  isDark ? 'bg-[#0B121E] border-slate-800' : 'bg-white border-slate-200 shadow-sm'
-                }`}>
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h3 className={`text-sm font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                          <Clock className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                          Today's Manpower Punch-In & Attendance Status
-                        </h3>
-                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
-                          isDark ? 'bg-emerald-950/80 text-emerald-300 border border-emerald-800' : 'bg-emerald-100 text-emerald-900 border border-emerald-300'
-                        }`}>
-                          10 On Paid Jobs • 2 Standby • 2 On Leave
-                        </span>
-                      </div>
-                      <p className={`text-xs mt-0.5 ${isDark ? 'text-slate-400' : 'text-slate-700 font-medium'}`}>
-                        Click on any technician to open their detailed service dossier & GPS route tracing
-                      </p>
-                    </div>
-
-                    <div className="flex items-center flex-wrap gap-2">
-                      {/* Page Switcher */}
-                      <div className={`inline-flex rounded-lg p-0.5 border text-xs font-bold ${
-                        isDark ? 'bg-slate-900 border-slate-800' : 'bg-slate-100 border-slate-200'
-                      }`}>
-                        <button
-                          onClick={() => setAttendancePage('p1')}
-                          className={`px-2.5 py-1 rounded-md transition cursor-pointer ${
-                            attendancePage === 'p1'
-                              ? 'bg-emerald-600 text-white shadow-sm'
-                              : isDark ? 'text-slate-400 hover:text-white' : 'text-slate-700 hover:text-slate-900'
-                          }`}
-                        >
-                          Page 1 (1–7)
-                        </button>
-                        <button
-                          onClick={() => setAttendancePage('p2')}
-                          className={`px-2.5 py-1 rounded-md transition cursor-pointer ${
-                            attendancePage === 'p2'
-                              ? 'bg-emerald-600 text-white shadow-sm'
-                              : isDark ? 'text-slate-400 hover:text-white' : 'text-slate-700 hover:text-slate-900'
-                          }`}
-                        >
-                          Page 2 (8–14)
-                        </button>
-                        <button
-                          onClick={() => setAttendancePage('all')}
-                          className={`px-2.5 py-1 rounded-md transition cursor-pointer ${
-                            attendancePage === 'all'
-                              ? 'bg-emerald-600 text-white shadow-sm'
-                              : isDark ? 'text-slate-400 hover:text-white' : 'text-slate-700 hover:text-slate-900'
-                          }`}
-                        >
-                          All (14)
-                        </button>
-                      </div>
-
-                      <button
-                        onClick={() => setActiveTab('attendance')}
-                        className="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:underline cursor-pointer ml-1"
-                      >
-                        <span>Full Roster Table</span>
-                        <ChevronRight className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Technician Cards Grid */}
-                  <div className={`grid gap-2.5 ${
-                    attendancePage === 'all'
-                      ? 'grid-cols-2 sm:grid-cols-4 lg:grid-cols-7'
-                      : 'grid-cols-2 sm:grid-cols-4 lg:grid-cols-7'
-                  }`}>
-                    {(attendancePage === 'p1'
-                      ? KRONE_FLEET_MASTER.slice(0, 7)
-                      : attendancePage === 'p2'
-                      ? KRONE_FLEET_MASTER.slice(7, 14)
-                      : KRONE_FLEET_MASTER
-                    ).map((tech) => (
-                      <div
-                        key={tech.id}
-                        onClick={() => handleOpenTechnicianDetail(tech.id)}
-                        className={`p-3 rounded-xl border text-center transition hover:border-emerald-500 cursor-pointer flex flex-col justify-between ${
-                          isDark
-                            ? 'bg-slate-900/60 border-slate-800 hover:bg-slate-800/80'
-                            : 'bg-white border-slate-200 hover:bg-emerald-50/50 shadow-sm'
-                        }`}
-                      >
-                        <div>
-                          <div className={`w-9 h-9 rounded-full font-black text-xs mx-auto flex items-center justify-center mb-1.5 border shadow-sm ${
-                            tech.status === 'On Paid Job'
-                              ? 'bg-emerald-100 text-emerald-950 border-emerald-400 dark:bg-emerald-950 dark:text-emerald-300'
-                              : tech.status === 'Available'
-                              ? 'bg-blue-100 text-blue-950 border-blue-400 dark:bg-blue-950 dark:text-blue-300'
-                              : 'bg-amber-100 text-amber-950 border-amber-400 dark:bg-amber-950 dark:text-amber-300'
-                          }`}>
-                            {tech.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                          </div>
-                          <span className={`text-xs font-bold block truncate ${isDark ? 'text-white' : 'text-slate-900'}`} title={tech.name}>
-                            {tech.name}
-                          </span>
-                          <span className="text-[10px] font-mono font-bold text-emerald-700 dark:text-emerald-400 block mt-0.5">
-                            Clock: {tech.clockInTime}
-                          </span>
-                          <span className={`text-[10px] font-medium block truncate ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
-                            {tech.region}
-                          </span>
-                        </div>
-
-                        <div className="mt-2 pt-1.5 border-t border-slate-100 dark:border-slate-800">
-                          <span className={`text-[9px] font-bold block px-1.5 py-0.5 rounded-md truncate ${
-                            tech.status === 'On Paid Job'
-                              ? 'bg-emerald-100 text-emerald-900 border border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300'
-                              : tech.status === 'Available'
-                              ? 'bg-blue-100 text-blue-900 border border-blue-300 dark:bg-blue-950 dark:text-blue-300'
-                              : 'bg-amber-100 text-amber-900 border border-amber-300 dark:bg-amber-950 dark:text-amber-300'
-                          }`} title={tech.status === 'On Paid Job' ? `Paid Job: ${tech.todayJobId}` : tech.status}>
-                            {tech.status === 'On Paid Job' ? `Paid: ${tech.todayJobId}` : tech.status}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Live Pulse Board */}
-                <LivePulseBoard
-                  pulseData={pulseData}
-                  isLoading={isLoadingPulse}
-                  onSelectTechnician={handleOpenTechnicianDetail}
-                  onInspectRoute={(id) => {
-                    setSelectedTechnicianId(id);
-                    setActiveTab('telematics');
-                  }}
-                  onSelectJob={(jobId) => {
-                    setActiveTab('machines');
-                  }}
-                  theme={theme}
-                />
-
-                {/* Machinery Under Service */}
-                <MachineryTable
-                  machinery={pulseData?.machines_under_service || []}
-                  isLoading={isLoadingPulse}
-                  onSelectMachine={(sn) => {
-                    setActiveTab('machines');
-                  }}
-                  onSelectJob={(jobId) => {
-                    setActiveTab('machines');
-                  }}
-                  theme={theme}
-                />
-              </div>
+              <OverviewView
+                kpis={pulseData?.kpis ?? null}
+                todayJobs={pulseData?.today_jobs ?? []}
+                technicians={KRONE_FLEET_MASTER}
+                onSelectTechnician={handleOpenTechnicianDetail}
+                onNavigateTab={(tab) => setActiveTab(tab)}
+                theme={theme}
+              />
             )}
 
             {/* TAB 2: ATTENDANCE & CLOCK-IN ROSTER */}
@@ -516,18 +351,15 @@ export const App: React.FC = () => {
             {/* TAB 4: MACHINES & WORK ORDERS */}
             {activeTab === 'machines' && (
               <div className="space-y-6">
-                <MachineryTable
-                  machinery={pulseData?.machines_under_service || []}
-                  isLoading={isLoadingPulse}
-                  onSelectMachine={(sn) => console.log('Machine:', sn)}
-                  onSelectJob={(id) => console.log('Job:', id)}
-                  theme={theme}
-                />
-
                 <LivePulseBoard
                   pulseData={pulseData}
                   isLoading={isLoadingPulse}
                   onSelectTechnician={handleOpenTechnicianDetail}
+                  onInspectRoute={(id) => {
+                    setSelectedTechnicianId(id);
+                    setActiveTab('telematics');
+                  }}
+                  onSelectJob={(id) => console.log('Job:', id)}
                   theme={theme}
                 />
               </div>

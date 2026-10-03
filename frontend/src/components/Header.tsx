@@ -126,61 +126,38 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
-        {/* Right: Auto-Sync, Beacon, Theme Toggle & Actions */}
-        <div className="flex flex-wrap items-center gap-2.5 sm:gap-3.5 w-full md:w-auto justify-end text-xs">
+        {/* Right: Live Telemetry, Security, Theme Toggle & Actions */}
+        <div className="flex items-center gap-2 sm:gap-2.5 w-full md:w-auto justify-end text-xs">
           
-          {/* 1. Live Telemetry / Offline Beacon */}
+          {/* Live Telemetry Beacon with Countdown */}
           <div className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border font-semibold ${
             isDark
-              ? 'bg-slate-900 border-slate-800 text-slate-300'
+              ? 'bg-slate-900/90 border-slate-800 text-slate-300'
               : 'bg-slate-100 border-slate-200 text-slate-700'
           }`}>
-            <span className="relative flex h-2.5 w-2.5">
+            <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
-            <span>Live Telemetry</span>
+            <span>Live Sync</span>
+            <span className="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">
+              {isAutoSyncEnabled ? `${autoSyncCountdown}s` : 'Paused'}
+            </span>
           </div>
 
-          {/* 2. Auto-Sync Countdown Badge */}
-          <button
-            onClick={onToggleAutoSync}
-            className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-semibold transition cursor-pointer ${
-              isAutoSyncEnabled
-                ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800'
-                : 'bg-slate-100 dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700'
-            }`}
-            title="Click to toggle auto background sync"
-          >
-            <Radio className={`w-3.5 h-3.5 ${isAutoSyncEnabled ? 'text-emerald-600 animate-pulse' : 'text-slate-400'}`} />
-            <span>
-              {isAutoSyncEnabled ? `Auto-Sync: ${autoSyncCountdown}s` : 'Auto-Sync: Paused'}
-            </span>
-          </button>
-
-          {/* 3. Last Synced Timestamp */}
-          <div className={`hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11px] font-mono ${
-            isDark ? 'bg-slate-900 border-slate-800 text-slate-400' : 'bg-slate-50 border-slate-200 text-slate-600'
-          }`}>
-            <Clock className="w-3.5 h-3.5 text-slate-400" />
-            <span>Synced: {formatTime(lastSyncedAt)}</span>
-          </div>
-
-          {/* Cloud API Settings Trigger */}
+          {/* Cloud API & Records */}
           {onOpenApiModal && (
             <button
               onClick={onOpenApiModal}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border font-bold transition cursor-pointer ${
-                dataSource === 'fieldy_live_cloud'
-                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700'
-                  : isDark
-                    ? 'bg-slate-800 hover:bg-slate-700 border-slate-700 text-slate-300'
-                    : 'bg-emerald-50/70 hover:bg-emerald-100/70 border-emerald-300 text-emerald-800'
+              className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border font-bold transition cursor-pointer ${
+                isDark
+                  ? 'bg-slate-900 border-slate-800 text-slate-300 hover:bg-slate-800'
+                  : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50 shadow-sm'
               }`}
-              title="Configure Fieldy Cloud API & View Active Database"
+              title="View Fieldy Production Database Records"
             >
               <Cloud className="w-3.5 h-3.5 text-emerald-600" />
-              <span>{dataSource === 'fieldy_live_cloud' ? 'Cloud API: Live' : `Fieldy API (${totalJobsCount || 483})`}</span>
+              <span>Fieldy ({totalJobsCount || 483})</span>
             </button>
           )}
 
@@ -188,38 +165,37 @@ export const Header: React.FC<HeaderProps> = ({
           {onOpenSecurityModal && (
             <button
               onClick={onOpenSecurityModal}
-              className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-mono font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20 hover:bg-emerald-500/20 transition cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-mono font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20 hover:bg-emerald-500/20 transition cursor-pointer"
               title="View Enterprise Security Posture & OWASP Audit"
             >
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-              <span>AAA Hardened</span>
+              <span>Hardened</span>
             </button>
           )}
 
-          {/* 4. Theme Toggle Button */}
+          {/* Theme Toggle Button */}
           {onToggleTheme && (
             <button
               onClick={onToggleTheme}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border font-bold transition cursor-pointer ${
+              className={`p-2 rounded-xl border font-bold transition cursor-pointer ${
                 isDark
-                  ? 'bg-slate-800 hover:bg-slate-700 border-slate-700 text-amber-400'
-                  : 'bg-slate-100 hover:bg-slate-200 border-slate-300 text-slate-700'
+                  ? 'bg-slate-900 hover:bg-slate-800 border-slate-800 text-amber-400'
+                  : 'bg-white hover:bg-slate-50 border-slate-200 text-slate-700 shadow-sm'
               }`}
               title={isDark ? 'Switch to Bright Mode' : 'Switch to Dark Mode'}
             >
               {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              <span className="hidden sm:inline">{isDark ? 'Bright Mode' : 'Dark Mode'}</span>
             </button>
           )}
 
-          {/* 5. Fresh Sync Button */}
+          {/* Fresh Sync Button */}
           <button
             onClick={handleSyncClick}
             disabled={isSyncing}
             className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold transition-all shadow-sm cursor-pointer disabled:opacity-50"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin' : ''}`} />
-            <span>{isSyncing ? 'Syncing...' : 'Fresh Sync'}</span>
+            <span>{isSyncing ? 'Syncing...' : 'Sync'}</span>
           </button>
         </div>
       </div>
