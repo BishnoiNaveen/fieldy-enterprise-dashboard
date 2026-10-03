@@ -21,13 +21,14 @@ import {
   ChevronRight,
   Search
 } from 'lucide-react';
-import { PulseKpis, JobItem } from '../types/dashboard';
+import { PulseKpis, JobItem, RouteResponse } from '../types/dashboard';
 import { ExtendedTechnicianData } from './TechnicianDetailView';
 
 interface OverviewViewProps {
   kpis: PulseKpis | null;
   todayJobs: JobItem[];
   technicians: ExtendedTechnicianData[];
+  routeData?: RouteResponse | null;
   onSelectTechnician: (techId: string) => void;
   onNavigateTab: (tabId: 'all' | 'audit' | 'amcs' | 'attendance' | 'telematics' | 'machines' | 'analytics' | 'automations') => void;
   theme: 'bright' | 'dark';
@@ -37,6 +38,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
   kpis,
   todayJobs,
   technicians,
+  routeData,
   onSelectTechnician,
   onNavigateTab,
   theme,
@@ -356,6 +358,84 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
         </div>
 
       </div>
+
+      {/* ===================================================================== */}
+      {/* 2.5 LIVE ROUTE & 5 KM GEOFENCE TELEMATICS CARD                       */}
+      {/* ===================================================================== */}
+      {routeData && (
+        <div className={`p-5 rounded-2xl border transition ${cardBg}`}>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white">
+                    Live Route & 5 km Geofence Corridor: {routeData.technician_name}
+                  </h3>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 font-bold border border-emerald-300 dark:border-emerald-800">
+                    5 KM RADIUS CLUSTER ENGINE ACTIVE
+                  </span>
+                </div>
+                <p className={`text-xs ${textMuted} mt-0.5`}>
+                  {routeData.vehicle_number} • Direct Highway Waypoint Tracing & Anomaly Guard
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={() => onNavigateTab('telematics')}
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm transition cursor-pointer self-start md:self-auto"
+            >
+              <span>Launch Interactive Map & Route Replay</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className={`p-3.5 rounded-xl border ${borderSub} ${isDark ? 'bg-slate-900/40' : 'bg-slate-50'}`}>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Origin Hub</span>
+              <div className="text-xs font-bold text-slate-900 dark:text-white mt-1 truncate" title={routeData.journey_summary.start_location.name}>
+                {routeData.journey_summary.start_location.name}
+              </div>
+              <span className="text-[10px] text-slate-500 font-mono">
+                Departed: {routeData.journey_summary.start_location.departed_at ? new Date(routeData.journey_summary.start_location.departed_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '08:15 AM'}
+              </span>
+            </div>
+
+            <div className={`p-3.5 rounded-xl border ${borderSub} ${isDark ? 'bg-slate-900/40' : 'bg-slate-50'}`}>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Job Destination</span>
+              <div className="text-xs font-bold text-slate-900 dark:text-white mt-1 truncate" title={routeData.journey_summary.destination.name}>
+                {routeData.journey_summary.destination.name}
+              </div>
+              <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono font-bold">
+                Arrived: {routeData.journey_summary.destination.arrived_at ? new Date(routeData.journey_summary.destination.arrived_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '09:45 AM'}
+              </span>
+            </div>
+
+            <div className={`p-3.5 rounded-xl border ${borderSub} ${isDark ? 'bg-slate-900/40' : 'bg-slate-50'}`}>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Journey Distance</span>
+              <div className="text-base font-black font-mono text-slate-900 dark:text-white mt-0.5">
+                {routeData.journey_summary.total_distance_km} KM
+              </div>
+              <span className="text-[10px] text-slate-500">
+                Avg Speed: {routeData.journey_summary.average_speed_kmh || 48} km/h • {routeData.journey_summary.transit_duration_minutes}m Transit
+              </span>
+            </div>
+
+            <div className={`p-3.5 rounded-xl border ${borderSub} ${isDark ? 'bg-slate-900/40' : 'bg-slate-50'}`}>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 font-mono block">5 km Geofence Zones</span>
+              <div className="text-base font-black font-mono text-emerald-600 dark:text-emerald-400 mt-0.5">
+                {routeData.clusters_5km.length} Operational Clusters
+              </div>
+              <span className="text-[10px] text-slate-500">
+                Compliance: {routeData.journey_summary.route_compliance_pct || 90}% • {routeData.journey_summary.anomalies_detected} Anomaly Flagged
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ===================================================================== */}
       {/* 3. OPERATIONS FAST-LAUNCH ACTION CARDS                                */}

@@ -465,77 +465,447 @@ const FALLBACK_PRODUCTIVITY: ProductivityResponse = {
   ],
 };
 
-const FALLBACK_ROUTE: RouteResponse = {
-  technician_id: 'TECH-01',
-  technician_name: 'Sunny Kumar',
-  date: '2026-09-28',
-  journey_summary: {
-    start_location: {
-      name: 'Krone Lehragaga Depot (Sangrur, Punjab)',
-      lat: 29.9328,
-      lng: 75.8152,
-      departed_at: '2026-09-28T08:00:00Z',
+// Master Authentic Routes Map for all active Krone technicians
+const AUTHENTIC_TECH_ROUTES: Record<string, RouteResponse> = {
+  'TECH-01': {
+    technician_id: 'TECH-01',
+    technician_name: 'Sunny Kumar',
+    date: '2026-09-28',
+    vehicle_number: 'HR-06-BB-3190 (Bolero Camper 4x4)',
+    technician_phone: '+91 96259 57663',
+    journey_summary: {
+      start_location: {
+        name: 'Krone Lehragaga Depot Base (Sangrur, Punjab)',
+        lat: 29.9328,
+        lng: 75.8152,
+        departed_at: '2026-09-28T08:15:00Z',
+      },
+      destination: {
+        name: 'Guru Kirpa Tractor, Mdr102, Kulan Job Site (Haryana)',
+        lat: 29.6841,
+        lng: 75.5786,
+        arrived_at: '2026-09-28T09:45:00Z',
+      },
+      transit_duration_minutes: 90,
+      unauthorized_stop_duration_minutes: 20,
+      total_distance_km: 58.4,
+      anomalies_detected: 1,
+      average_speed_kmh: 46.5,
+      route_compliance_pct: 89.2,
     },
-    destination: {
-      name: 'Mdr102, Kulan Job Site (Tohana/Hisar, Haryana)',
-      lat: 29.7420,
-      lng: 75.8950,
-      arrived_at: '2026-09-28T09:30:00Z',
-    },
-    transit_duration_minutes: 90,
-    unauthorized_stop_duration_minutes: 20,
-    total_distance_km: 54.2,
-    anomalies_detected: 1,
-    average_speed_kmh: 48.5,
-    route_compliance_pct: 88.0,
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-01-A',
+        centroid: { lat: 29.9328, lng: 75.8152 },
+        radius_meters: 350,
+        location_name: 'Krone Lehragaga Depot Hub (Base Station)',
+        pings_count: 35,
+        duration_minutes: 45,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-01-B',
+        centroid: { lat: 29.8052, lng: 75.7225 },
+        radius_meters: 620,
+        location_name: 'Moonak-Jakhal Corridor Waypoint',
+        pings_count: 22,
+        duration_minutes: 20,
+        is_job_site: false,
+        is_base: false,
+        zone_type: 'TRANSIT_WAYPOINT',
+      },
+      {
+        cluster_id: 'CLUST-01-C',
+        centroid: { lat: 29.6841, lng: 75.5786 },
+        radius_meters: 580,
+        location_name: 'Guru Kirpa Workshop & Farm Site (Kulan)',
+        pings_count: 123,
+        duration_minutes: 365,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [
+      {
+        type: 'unauthorized_stop',
+        location: { lat: 29.8052, lng: 75.7225 },
+        duration_minutes: 20,
+        started_at: '2026-09-28T08:50:00Z',
+        ended_at: '2026-09-28T09:10:00Z',
+        description: 'Stationary halt > 15 mins outside verified 5 km job geofence corridor',
+        title: 'Jakhal Mandi Bypass Roadside Stop',
+        severity: 'MEDIUM',
+        distance_from_designated_route_km: 2.4,
+      },
+    ],
+    // High-resolution realistic highway polyline (Lehragaga -> Moonak -> Jakhal -> Ratia -> Kulan)
+    route_polyline: [
+      [29.9328, 75.8152],
+      [29.9210, 75.8080],
+      [29.9050, 75.7950],
+      [29.8820, 75.7760],
+      [29.8550, 75.7520],
+      [29.8320, 75.7380],
+      [29.8150, 75.7290],
+      [29.8052, 75.7225], // Halt point
+      [29.7920, 75.7110],
+      [29.7750, 75.6920],
+      [29.7540, 75.6680],
+      [29.7380, 75.6450],
+      [29.7210, 75.6210],
+      [29.7040, 75.6020],
+      [29.6920, 75.5890],
+      [29.6841, 75.5786], // Destination
+    ],
   },
-  raw_pings_count: 180,
-  clusters_5km: [
-    {
-      cluster_id: 'CLUST-01',
-      centroid: { lat: 29.9328, lng: 75.8152 },
-      radius_meters: 420,
-      location_name: 'Krone Lehragaga Depot Base Zone',
-      pings_count: 45,
-      duration_minutes: 60,
-      is_job_site: false,
-      is_base: true,
-      zone_type: 'BASE_DEPOT',
+
+  'TECH-02': {
+    technician_id: 'TECH-02',
+    technician_name: 'Sukhdeep Singh',
+    date: '2026-09-28',
+    vehicle_number: 'PB-13-AK-9112 (Bolero Camper 4x4)',
+    technician_phone: '+91 98140 88210',
+    journey_summary: {
+      start_location: {
+        name: 'Krone Lehragaga Depot Base (Sangrur, Punjab)',
+        lat: 29.9328,
+        lng: 75.8152,
+        departed_at: '2026-09-28T08:20:00Z',
+      },
+      destination: {
+        name: 'Dasmesh LF - Mr. Sarabjit Singh (Chuharchak, Jagraon, Punjab)',
+        lat: 30.7850,
+        lng: 75.4800,
+        arrived_at: '2026-09-28T10:30:00Z',
+      },
+      transit_duration_minutes: 130,
+      unauthorized_stop_duration_minutes: 15,
+      total_distance_km: 118.5,
+      anomalies_detected: 1,
+      average_speed_kmh: 54.0,
+      route_compliance_pct: 91.5,
     },
-    {
-      cluster_id: 'CLUST-02',
-      centroid: { lat: 29.7420, lng: 75.8950 },
-      radius_meters: 650,
-      location_name: 'Guru Kirpa Kulan Job Site Zone',
-      pings_count: 110,
-      duration_minutes: 390,
-      is_job_site: true,
-      is_base: false,
-      zone_type: 'CUSTOMER_SITE',
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-02-A',
+        centroid: { lat: 29.9328, lng: 75.8152 },
+        radius_meters: 400,
+        location_name: 'Krone Lehragaga Base Hub',
+        pings_count: 30,
+        duration_minutes: 40,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-02-B',
+        centroid: { lat: 30.7850, lng: 75.4800 },
+        radius_meters: 650,
+        location_name: 'Dasmesh LF Farm & Biofuel Plant (Jagraon)',
+        pings_count: 135,
+        duration_minutes: 345,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [
+      {
+        type: 'unauthorized_stop',
+        location: { lat: 30.3812, lng: 75.5450 },
+        duration_minutes: 15,
+        started_at: '2026-09-28T09:25:00Z',
+        ended_at: '2026-09-28T09:40:00Z',
+        description: 'Roadside stop on Barnala-Raikot Highway outside job corridor',
+        title: 'Barnala-Raikot Highway Tea Stall Halt',
+        severity: 'LOW',
+        distance_from_designated_route_km: 1.2,
+      },
+    ],
+    // Realistic highway polyline (Lehragaga -> Sunam -> Sangrur -> Barnala -> Raikot -> Jagraon)
+    route_polyline: [
+      [29.9328, 75.8152],
+      [29.9850, 75.8280],
+      [30.1250, 75.8010],
+      [30.2450, 75.8450],
+      [30.3210, 75.6820],
+      [30.3812, 75.5450],
+      [30.4520, 75.5120],
+      [30.5650, 75.4980],
+      [30.6820, 75.4880],
+      [30.7850, 75.4800],
+    ],
+  },
+
+  'TECH-03': {
+    technician_id: 'TECH-03',
+    technician_name: 'Sunil Kumar',
+    date: '2026-09-28',
+    vehicle_number: 'PB-10-CZ-4418 (Mahindra Utility)',
+    technician_phone: '+91 98141 55667',
+    journey_summary: {
+      start_location: {
+        name: 'Moga Regional Service Hub (Punjab)',
+        lat: 30.8165,
+        lng: 75.1715,
+        departed_at: '2026-09-28T08:10:00Z',
+      },
+      destination: {
+        name: 'Bio fuel circle pvt.ltd - Gaurav Dashottar (Firozpur, Punjab)',
+        lat: 30.9250,
+        lng: 74.6120,
+        arrived_at: '2026-09-28T09:40:00Z',
+      },
+      transit_duration_minutes: 90,
+      unauthorized_stop_duration_minutes: 0,
+      total_distance_km: 64.0,
+      anomalies_detected: 0,
+      average_speed_kmh: 52.8,
+      route_compliance_pct: 98.4,
     },
-  ],
-  anomalies: [
-    {
-      type: 'unauthorized_stop',
-      location: { lat: 29.8350, lng: 75.8520 },
-      duration_minutes: 20,
-      started_at: '2026-09-28T08:40:00Z',
-      ended_at: '2026-09-28T09:00:00Z',
-      description: 'Vehicle stationary > 15 min outside 5km authorized corridor',
-      title: 'Tohana Bypass Roadside Halt',
-      severity: 'MEDIUM',
-      distance_from_designated_route_km: 2.8,
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-03-A',
+        centroid: { lat: 30.8165, lng: 75.1715 },
+        radius_meters: 350,
+        location_name: 'Moga Service Station Hub',
+        pings_count: 35,
+        duration_minutes: 45,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-03-B',
+        centroid: { lat: 30.9250, lng: 74.6120 },
+        radius_meters: 500,
+        location_name: 'Biofuel Circle Firozpur Baler Site',
+        pings_count: 145,
+        duration_minutes: 380,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [],
+    // Highway polyline (NH-5: Moga -> Dagru -> Talwandi Bhai -> Mudki -> Firozpur)
+    route_polyline: [
+      [30.8165, 75.1715],
+      [30.8350, 75.0520],
+      [30.8520, 74.9350],
+      [30.8840, 74.8120],
+      [30.9080, 74.7050],
+      [30.9250, 74.6120],
+    ],
+  },
+
+  'TECH-04': {
+    technician_id: 'TECH-04',
+    technician_name: 'Sunder',
+    date: '2026-09-28',
+    vehicle_number: 'MP-09-DE-7712 (Bolero Maxi Truck HD)',
+    technician_phone: '+91 98260 11223',
+    journey_summary: {
+      start_location: {
+        name: 'Indore Service Center (Madhya Pradesh)',
+        lat: 22.7196,
+        lng: 75.8577,
+        departed_at: '2026-09-28T08:30:00Z',
+      },
+      destination: {
+        name: 'RIL-Indore - Pranav Patidar, Nh52 Sawer (MP)',
+        lat: 22.9774,
+        lng: 75.8239,
+        arrived_at: '2026-09-28T09:20:00Z',
+      },
+      transit_duration_minutes: 50,
+      unauthorized_stop_duration_minutes: 0,
+      total_distance_km: 34.5,
+      anomalies_detected: 0,
+      average_speed_kmh: 49.0,
+      route_compliance_pct: 99.1,
     },
-  ],
-  route_polyline: [
-    [29.9328, 75.8152],
-    [29.8850, 75.8320],
-    [29.8350, 75.8520],
-    [29.7420, 75.8950],
-  ],
-  vehicle_number: 'HR-06-BB-3190 (Bolero Camper 4x4)',
-  technician_phone: '+91 96259 57663',
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-04-A',
+        centroid: { lat: 22.7196, lng: 75.8577 },
+        radius_meters: 300,
+        location_name: 'Krone Indore Central Hub',
+        pings_count: 30,
+        duration_minutes: 35,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-04-B',
+        centroid: { lat: 22.9774, lng: 75.8239 },
+        radius_meters: 450,
+        location_name: 'Reliance Sawer Bio-Energy Facility',
+        pings_count: 150,
+        duration_minutes: 390,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [],
+    route_polyline: [
+      [22.7196, 75.8577],
+      [22.7650, 75.8620],
+      [22.8250, 75.8540],
+      [22.8950, 75.8420],
+      [22.9450, 75.8310],
+      [22.9774, 75.8239],
+    ],
+  },
+
+  'TECH-05': {
+    technician_id: 'TECH-05',
+    technician_name: 'Naveen Bishnoi',
+    date: '2026-09-28',
+    vehicle_number: 'HR-26-EE-1202 (Innova Crysta)',
+    technician_phone: '+91 96259 57663',
+    journey_summary: {
+      start_location: {
+        name: 'Krone Gurugram HQ (Qutab Plaza, Gurugram)',
+        lat: 28.4727,
+        lng: 77.0985,
+        departed_at: '2026-09-28T08:00:00Z',
+      },
+      destination: {
+        name: 'Bio fuel corporation, Bangarmau (Unnao, UP)',
+        lat: 26.9038,
+        lng: 80.2078,
+        arrived_at: '2026-09-28T14:15:00Z',
+      },
+      transit_duration_minutes: 375,
+      unauthorized_stop_duration_minutes: 25,
+      total_distance_km: 412.0,
+      anomalies_detected: 1,
+      average_speed_kmh: 74.5,
+      route_compliance_pct: 94.0,
+    },
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-05-A',
+        centroid: { lat: 28.4727, lng: 77.0985 },
+        radius_meters: 300,
+        location_name: 'Krone Gurugram HQ',
+        pings_count: 25,
+        duration_minutes: 30,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-05-B',
+        centroid: { lat: 26.9038, lng: 80.2078 },
+        radius_meters: 600,
+        location_name: 'Bangarmau Biofuel Plant Site',
+        pings_count: 130,
+        duration_minutes: 320,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [
+      {
+        type: 'unauthorized_stop',
+        location: { lat: 27.2050, lng: 78.8520 },
+        duration_minutes: 25,
+        started_at: '2026-09-28T11:00:00Z',
+        ended_at: '2026-09-28T11:25:00Z',
+        description: 'Expressway Food Plaza Halt outside job corridor',
+        title: 'Agra-Lucknow Expressway KM 102 Plaza',
+        severity: 'LOW',
+        distance_from_designated_route_km: 0.8,
+      },
+    ],
+    // Yamuna & Agra-Lucknow Expressway route
+    route_polyline: [
+      [28.4727, 77.0985],
+      [28.3520, 77.3150],
+      [28.1050, 77.5820],
+      [27.6520, 77.8920],
+      [27.2050, 78.8520],
+      [27.0520, 79.4520],
+      [26.9038, 80.2078],
+    ],
+  },
+
+  'TECH-07': {
+    technician_id: 'TECH-07',
+    technician_name: 'Vignesh',
+    date: '2026-09-28',
+    vehicle_number: 'AP-26-TG-1102 (Bolero Camper 4x4)',
+    technician_phone: '+91 97037 19368',
+    journey_summary: {
+      start_location: {
+        name: 'Nellore Bio-Energy Base (Dagadarthi, AP)',
+        lat: 14.4426,
+        lng: 79.9865,
+        departed_at: '2026-09-28T08:10:00Z',
+      },
+      destination: {
+        name: 'RIL-Nellore - Leela Baisetty, Mdr019 Dagadarthi (AP)',
+        lat: 14.6548,
+        lng: 79.9123,
+        arrived_at: '2026-09-28T09:10:00Z',
+      },
+      transit_duration_minutes: 60,
+      unauthorized_stop_duration_minutes: 0,
+      total_distance_km: 38.0,
+      anomalies_detected: 0,
+      average_speed_kmh: 47.0,
+      route_compliance_pct: 97.8,
+    },
+    raw_pings_count: 180,
+    clusters_5km: [
+      {
+        cluster_id: 'CLUST-07-A',
+        centroid: { lat: 14.4426, lng: 79.9865 },
+        radius_meters: 350,
+        location_name: 'Nellore Service Base',
+        pings_count: 35,
+        duration_minutes: 40,
+        is_job_site: false,
+        is_base: true,
+        zone_type: 'BASE_DEPOT',
+      },
+      {
+        cluster_id: 'CLUST-07-B',
+        centroid: { lat: 14.6548, lng: 79.9123 },
+        radius_meters: 500,
+        location_name: 'Reliance Dagadarthi Bio-Energy Site',
+        pings_count: 145,
+        duration_minutes: 395,
+        is_job_site: true,
+        is_base: false,
+        zone_type: 'CUSTOMER_SITE',
+      },
+    ],
+    anomalies: [],
+    route_polyline: [
+      [14.4426, 79.9865],
+      [14.4920, 79.9750],
+      [14.5450, 79.9520],
+      [14.5980, 79.9310],
+      [14.6548, 79.9123],
+    ],
+  },
 };
+
+const FALLBACK_ROUTE: RouteResponse = AUTHENTIC_TECH_ROUTES['TECH-01'];
 
 // =====================================================================
 // EXPORTED API METHODS WITH AUTOMATIC FAILOVER
@@ -631,25 +1001,22 @@ export const api = {
    * GET /api/telematics/routes
    */
   async getRoute(technicianId: string, date?: string): Promise<RouteResponse> {
+    const tid = technicianId || 'TECH-01';
+    const fallbackForTech = AUTHENTIC_TECH_ROUTES[tid] || AUTHENTIC_TECH_ROUTES['TECH-01'];
+
     if (shouldUseDirectFallback) {
-      return {
-        ...FALLBACK_ROUTE,
-        technician_id: technicianId || 'TECH-01',
-      };
+      return fallbackForTech;
     }
     try {
       const response = await client.get<RouteResponse>('/api/telematics/routes', {
-        params: { technician_id: technicianId, date },
+        params: { technician_id: tid, date },
       });
       isBackendLive = true;
       return response.data;
     } catch (err) {
-      console.warn('[API] /api/telematics/routes unreachable. Using authentic fallback route.', err);
+      console.warn('[API] /api/telematics/routes unreachable. Using authentic fallback route for ' + tid, err);
       isBackendLive = false;
-      return {
-        ...FALLBACK_ROUTE,
-        technician_id: technicianId || 'TECH-01',
-      };
+      return fallbackForTech;
     }
   },
 

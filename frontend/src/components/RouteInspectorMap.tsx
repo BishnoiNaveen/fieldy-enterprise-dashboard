@@ -173,21 +173,26 @@ const MapController: React.FC<MapControllerProps> = ({ bounds, targetFocus }) =>
   const map = useMap();
 
   useEffect(() => {
+    map.invalidateSize();
     const timer = setTimeout(() => {
       map.invalidateSize();
     }, 250);
     return () => clearTimeout(timer);
-  }, [map]);
+  }, [map, bounds]);
 
   useEffect(() => {
     if (bounds) {
-      map.fitBounds(bounds, { padding: [60, 60], maxZoom: 14 });
+      try {
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 13, animate: true });
+      } catch (e) {
+        console.warn('fitBounds error', e);
+      }
     }
   }, [bounds, map]);
 
   useEffect(() => {
     if (targetFocus) {
-      map.flyTo([targetFocus.lat, targetFocus.lng], 15, {
+      map.flyTo([targetFocus.lat, targetFocus.lng], 14, {
         duration: 1.2,
         easeLinearity: 0.25,
       });
@@ -322,8 +327,35 @@ export const RouteInspectorMap: React.FC<RouteInspectorMapProps> = ({
           </div>
         </div>
 
-        {/* Mode Selector Toggle */}
-        <div className="flex items-center gap-2">
+        {/* Mode Selector & Technician Quick-Switch Controls */}
+        <div className="flex flex-wrap items-center gap-2.5">
+          {/* Direct Technician Quick Switcher */}
+          {mapMode === 'ROUTE' && (
+            <div className="flex items-center gap-1.5">
+              <span className="text-[11px] font-bold text-slate-500 uppercase font-mono hidden sm:inline">Engineer:</span>
+              <select
+                value={routeData.technician_id}
+                onChange={(e) => {
+                  if (onSelectTechnician) {
+                    onSelectTechnician(e.target.value);
+                  }
+                }}
+                className={`text-xs font-bold py-1.5 px-2.5 rounded-xl border ${
+                  isDark
+                    ? 'bg-slate-900 border-slate-700 text-emerald-400'
+                    : 'bg-white border-slate-300 text-slate-900 shadow-sm'
+                } focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer`}
+              >
+                {KRONE_FLEET_MASTER.map((tech) => (
+                  <option key={tech.id} value={tech.id}>
+                    {tech.name} ({tech.region.split('/')[0].trim()}) {tech.status === 'On Paid Job' ? '• Active' : ''}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
+          {/* Mode Selector Toggle */}
           <div className="inline-flex p-1 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs">
             <button
               onClick={() => setMapMode('ROUTE')}

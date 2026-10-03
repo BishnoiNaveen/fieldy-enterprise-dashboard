@@ -305,6 +305,7 @@ export const App: React.FC = () => {
                 kpis={pulseData?.kpis ?? null}
                 todayJobs={pulseData?.today_jobs ?? []}
                 technicians={KRONE_FLEET_MASTER}
+                routeData={routeData}
                 onSelectTechnician={handleOpenTechnicianDetail}
                 onNavigateTab={(tab) => setActiveTab(tab)}
                 theme={theme}
