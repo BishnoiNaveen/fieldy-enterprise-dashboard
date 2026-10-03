@@ -38,16 +38,29 @@ export const SecurityModal: React.FC<SecurityModalProps> = ({ isOpen, onClose, t
       api.getSecurityAudit()
         .then(setAudit)
         .finally(() => setLoading(false));
+
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') onClose();
+      };
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
     }
-  }, [isOpen]);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
-      <div className={`w-full max-w-xl rounded-2xl border p-6 shadow-2xl relative ${modalBg}`}>
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in"
+    >
+      <div 
+        onClick={e => e.stopPropagation()}
+        className={`w-full max-w-xl rounded-2xl border p-6 shadow-2xl relative ${modalBg}`}
+      >
         <button
           onClick={onClose}
+          aria-label="Close modal"
           className="absolute right-4 top-4 p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-slate-600 transition"
         >
           <X className="w-5 h-5" />
